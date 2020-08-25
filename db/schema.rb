@@ -1,17 +1,5 @@
-# This file is auto-generated from the current state of the database. Instead
-# of editing this file, please use the migrations feature of Active Record to
-# incrementally modify your database, and then regenerate this schema definition.
-#
-# This file is the source Rails uses to define your schema when running `rails
-# db:schema:load`. When creating a new database, `rails db:schema:load` tends to
-# be faster and is potentially less error prone than running all of your
-# migrations from scratch. Old migrations may fail to apply correctly if those
-# migrations use external dependencies or application code.
-#
-# It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 2020_08_25_152737) do
-
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -41,20 +29,21 @@ ActiveRecord::Schema.define(version: 2020_08_25_152737) do
     t.integer "fee"
     t.string "localisation"
     t.integer "mood"
-    t.bigint "availability_id", null: false
     t.integer "category"
     t.integer "budget"
     t.string "photo_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["availability_id"], name: "index_activities_on_availability_id"
+    t.text "content"
   end
 
   create_table "availabilities", force: :cascade do |t|
+    t.bigint "activity_id", null: false
     t.date "start_date"
     t.date "end_date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["activity_id"], name: "index_availabilities_on_activity_id"
   end
 
   create_table "days", force: :cascade do |t|
@@ -115,8 +104,10 @@ ActiveRecord::Schema.define(version: 2020_08_25_152737) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "activities", "availabilities"
+
   add_foreign_key "days", "trips"
   add_foreign_key "reviews", "activities"
   add_foreign_key "reviews", "users"
