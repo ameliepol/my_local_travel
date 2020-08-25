@@ -31,9 +31,15 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
 
 gem 'autoprefixer-rails'
+
 gem 'font-awesome-sass'
+
 gem 'simple_form'
-group :development, :test do  gem 'pry-byebug'
+
+gem 'cloudinary', '~> 1.12.0'
+
+group :development, :test do
+  gem 'pry-byebug'
   gem 'pry-rails'
   gem 'dotenv-rails'
 
