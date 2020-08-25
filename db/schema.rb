@@ -20,14 +20,12 @@ ActiveRecord::Schema.define(version: 2020_08_25_141801) do
     t.integer "fee"
     t.string "localisation"
     t.integer "mood"
-    t.bigint "availability_id", null: false
     t.integer "category"
     t.integer "budget"
     t.string "photo_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.text "content"
-    t.index ["availability_id"], name: "index_activities_on_availability_id"
   end
 
   create_table "availabilities", force: :cascade do |t|
@@ -95,7 +93,6 @@ ActiveRecord::Schema.define(version: 2020_08_25_141801) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "activities", "availabilities"
   add_foreign_key "days", "trips"
   add_foreign_key "reviews", "activities"
   add_foreign_key "reviews", "users"

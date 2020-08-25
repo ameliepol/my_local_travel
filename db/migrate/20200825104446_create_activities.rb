@@ -5,7 +5,6 @@ class CreateActivities < ActiveRecord::Migration[6.0]
       t.integer :fee
       t.string :localisation
       t.integer :mood
-      t.references :availability, null: false, foreign_key: true
       t.integer :category
       t.integer :budget
       t.string :photo_url

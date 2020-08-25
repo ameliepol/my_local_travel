@@ -1,4 +1,4 @@
 class Activity < ApplicationRecord
-  belongs_to :availability
+  has_many :availabilities
   has_many :reviews
 end
