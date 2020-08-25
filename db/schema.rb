@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_25_124920) do
+ActiveRecord::Schema.define(version: 2020_08_25_141801) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2020_08_25_124920) do
     t.string "photo_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "content"
     t.index ["availability_id"], name: "index_activities_on_availability_id"
   end
 
@@ -52,6 +53,11 @@ ActiveRecord::Schema.define(version: 2020_08_25_124920) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["activity_id"], name: "index_reviews_on_activity_id"
     t.index ["user_id"], name: "index_reviews_on_user_id"
+  end
+
+  create_table "searches", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "selected_activities", force: :cascade do |t|
