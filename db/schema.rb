@@ -29,10 +29,12 @@ ActiveRecord::Schema.define(version: 2020_08_25_141801) do
   end
 
   create_table "availabilities", force: :cascade do |t|
+    t.bigint "activity_id", null: false
     t.date "start_date"
     t.date "end_date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["activity_id"], name: "index_availabilities_on_activity_id"
   end
 
   create_table "days", force: :cascade do |t|
@@ -93,6 +95,7 @@ ActiveRecord::Schema.define(version: 2020_08_25_141801) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "availabilities", "activities"
   add_foreign_key "days", "trips"
   add_foreign_key "reviews", "activities"
   add_foreign_key "reviews", "users"
