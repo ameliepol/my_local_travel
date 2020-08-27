@@ -1,4 +1,6 @@
-<%= @trip.address %>
-<%= @trip.start_date%>
-
+<ol>
+  <% @activities.each do |activity| %>
+    <li><%= activity.name %></li>
+  <% end %>
+</ol>
 
