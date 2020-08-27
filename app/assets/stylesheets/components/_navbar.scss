@@ -1,6 +1,9 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
+  font-family: "Rubik";
+  font-size: 20px;
+  height: 80px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -8,5 +11,20 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 230px;
+}
+
+.nav-item strong {
+  font-weight: bolder;
+}
+
+.btn {
+  border-radius: 5px;
+  margin: 5px;
+  font-family: "Rubik";
+}
+
+.dropdown-menu .dropdown-menu-right .show {
+  border-radius: 5px;
+  font-size: $my-beige;
 }
