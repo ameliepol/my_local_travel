@@ -1,0 +1,22 @@
+
+<div class="container">
+  <%= simple_form_for @search, url: trips_path, method: :post,
+    wrapper_mappings: {
+      radio_buttons:    :vertical_collection_inline,
+    }  do |f| %>
+     <h2> Quel voyageur êtes-vous? </h2>
+      <%= f.input :mood, as: :radio_buttons, collection: Activity.moods %>
+     <h2> Quel est votre budget? </h2>
+      <%= f.input :budget, as: :radio_buttons, collection: Activity.budgets %>
+      <h2>d'Où partez-vous?</h2>
+      <%= f.input :address, input_html: { autocomplete: 'current-address' } %>
+      <%= f.input :radius, as: :radio_buttons, collection: ["10km", "20km"] %>
+      <h2>Quand souhaitez-vous partir?</h2>
+      <%= f.input :start_date, as: :date %>
+      <h2>Pour combien de temps?</h2>
+      <%= f.input :days_number, as: :radio_buttons, collection: [1, 2, 3] %>
+      <%= f.submit %>
+  <% end %>
+
+
+</div>
