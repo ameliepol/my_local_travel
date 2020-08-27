@@ -1,29 +1,54 @@
 <div class="main-container">
   <div class="video-container" id="video">
     <header class="home">
-      <h1>Pages#home</h1>
-      <p>Find me in app/views/pages/home.html.erb</p>
+    <%= video_tag "video1.mp4", autoplay: :autoplay, loop: :loop, muted: :muted, class: "home_video" %>
     </header>
   </div>
+
   <div class="wrapper">
     <div class="col-left">
       <div class="col-left-row-1 color green">
-        Lorem 1
+        <div class="title" style="top: 100px;">
+          <h3></h3>
+          <h2></h2>
+        <a href="#" class="btn">View More</a>
+        </div>
+        <div class="img">
+        </div>
       </div>
       <div class="col-left-row-2 color yellow">
-        Lorem 2
+        <div class="title">
+          <h3></h3>
+          <h2></h2>
+        <a href="#" class="btn">View More</a>
+        </div>
       </div>
     </div>
+
       <div class="col-right color blue">
-        Lorem 6
+        <div class="title2">
+          <h3></h3>
+          <h2></h2>
+        <a href="#" class="btn">View More</a>
+        </div>
       </div>
+
   </div>
   <div class="wrapper2">
       <div class="col-left2 color red">
-        Lorem 3
+        <div class="title">
+          <h3></h3>
+          <h2></h2>
+        <a href="#" class="btn">View More</a>
+        </div>
       </div>
+
       <div class="col-right2-row-3 color grey">
-        Lorem 7
+        <div class="title">
+          <h3></h3>
+          <h2></h2>
+        <a href="#" class="btn">View More</a>
+        </div>
       </div>
   </div>
 </div>
