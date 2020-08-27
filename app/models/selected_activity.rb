@@ -1,4 +1,4 @@
 class SelectedActivity < ApplicationRecord
   belongs_to :day
-  has_many :activities
+  belongs_to :activity
 end

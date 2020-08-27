@@ -1,16 +1,16 @@
 class SelectedActivitiesController < ApplicationController
-
-  link_to("+", trip_selected_activities_path(@trip, activity_id: @activity.id))
-
   def create
-    @selected_activity = Selected_activity.new(selected_activity_params)
+    @selected_activity = SelectedActivity.new
     @trip = Trip.find(params[:trip_id])
     @day = @trip.days.first
-    @activity = Activity.find(params[:trip_id])
-    @selected_activity.trip = @selected_activity
+
+    @activity = Activity.find(params[:activity_id])
+    @selected_activity.day = @day
+    @selected_activity.activity = @activity
+
     @selected_activity.save
-
+    redirect_to edit_trip_path(@trip)
   end
+
+
 end
-
-

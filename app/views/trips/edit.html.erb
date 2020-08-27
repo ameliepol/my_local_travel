@@ -4,3 +4,4 @@
   <% end %>
 </ol>
 
+<%= link_to("+", trip_selected_activities_path(@trip, activity_id: Activity.first.id), method: :post)  %>
