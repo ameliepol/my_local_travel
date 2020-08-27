@@ -38,14 +38,20 @@
   background-color: green;
   flex-grow: 3;
   overflow: hidden;
+  background-size: 100% 150%;
+  background-image: url("https://res.cloudinary.com/dwekobmrk/image/upload/v1598554195/My%20local%20travel/Aventurier/kimson-doan-AZMmUy2qL6A-unsplash_k2v8yy_rtzy30_ps33um.jpg")
 }
 .blue {
   background-color: blue;
   margin-left: 16px;
+  background-size: 100% 150%;
+  background-image: url("https://res.cloudinary.com/dwekobmrk/image/upload/v1598556671/My%20local%20travel/Epicurien/victor-rodriguez-iglesias-zTG8dSz10tQ-unsplash_dkzb2z_duymcx.jpg")
 }
 .yellow {
   background-color: yellow;
   flex-grow: 3;
+  background-size: 100% 100%;
+  background-image: url("https://res.cloudinary.com/dwekobmrk/image/upload/v1598558093/My%20local%20travel/Aventurier/esther-tuttle-dyjH3YMblpo-unsplash_ia3p3d_mz1csl.jpg")
 }
 .color {
   margin-top: 16px;
@@ -53,7 +59,7 @@
 
 .wrapper2 {
   display: flex;
-  height: 45vh;
+  height: 40vh;
 }
 
 .col-left2 {
@@ -62,12 +68,16 @@
 
 .red {
   background-color: red;
+  background-size: 100% 100%;
+  background-image: url("https://res.cloudinary.com/dwekobmrk/image/upload/v1598365590/My%20local%20travel/Aventurier/elizeu-dias-xarhNpLSHTk-unsplash_pqvr2f.jpg")
 }
 
 .grey {
   background-color: grey;
   margin-left: 16px;
   flex-basis: 69%;
+  background-size: 100% 100%;
+  background-image: url("https://res.cloudinary.com/dwekobmrk/image/upload/v1598558349/My%20local%20travel/Epicurien/test_ykrtmw.jpg")
 }
 
 .wrapper .title .btn {
@@ -90,6 +100,7 @@
     left: 44px;
     right: 44px;
     width: fit-content;
+    display: inline-block;
 }
 
 .wrapper2 .title .btn {
@@ -112,6 +123,7 @@
     left: 44px;
     right: 44px;
     width: fit-content;
+    display: inline-block;
 }
 
 .title2 .btn {
@@ -131,7 +143,8 @@
 
 .title2 {
     position: relative;
-    left: 44px;
+    top: 35px;
+    left: 215px;
     right: 44px;
     width: fit-content;
 }
