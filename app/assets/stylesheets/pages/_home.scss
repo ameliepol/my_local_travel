@@ -1,1 +1,137 @@
 // Specific CSS for your home-page
+.main-container {
+  position: relative;
+  height: 100%;
+  margin: 16px;
+  background: transparent;
+}
+
+.home_video {
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  position: relative;
+  background: grey;
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
+}
+
+.wrapper {
+  display: flex;
+  height: 580px;
+  color: darkblue;
+}
+
+.col-right {
+  flex-basis: 35%;
+}
+
+.col-left {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.green {
+  background-color: green;
+  flex-grow: 3;
+  overflow: hidden;
+}
+.blue {
+  background-color: blue;
+  margin-left: 16px;
+}
+.yellow {
+  background-color: yellow;
+  flex-grow: 3;
+}
+.color {
+  margin-top: 16px;
+}
+
+.wrapper2 {
+  display: flex;
+  height: 45vh;
+}
+
+.col-left2 {
+  flex-basis: 35%;
+}
+
+.red {
+  background-color: red;
+}
+
+.grey {
+  background-color: grey;
+  margin-left: 16px;
+  flex-basis: 69%;
+}
+
+.wrapper .title .btn {
+    display: inline-block;
+    border: 0;
+    margin: 30px 0 0 0;
+    font-size: 12px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'Effra-Medium', arial;
+    letter-spacing: 0.3em;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.wrapper .title {
+    position: relative;
+    left: 44px;
+    right: 44px;
+    width: fit-content;
+}
+
+.wrapper2 .title .btn {
+    display: inline-block;
+    border: 0;
+    margin: 30px 0 0 0;
+    font-size: 12px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'Effra-Medium', arial;
+    letter-spacing: 0.3em;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.wrapper2 .title {
+    position: relative;
+    left: 44px;
+    right: 44px;
+    width: fit-content;
+}
+
+.title2 .btn {
+    display: inline-block;
+    border: 0;
+    margin: 30px 0 0 0;
+    font-size: 12px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'Effra-Medium', arial;
+    letter-spacing: 0.3em;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.title2 {
+    position: relative;
+    left: 44px;
+    right: 44px;
+    width: fit-content;
+}

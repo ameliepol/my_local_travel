@@ -1,6 +1,17 @@
 class TripsController < ApplicationController
+  def create
+    @search = Search.new(search_params)
+    if @search.valid?
+      @trip = Trip.new(start_date: @search.start_date, address: @search.address, radius: @search.radius, user: current_user, end_date: @search.start_date, mood: @search.mood, budget: @search.budget)
+      @days_number = @search.days_number.times { Day.create(trip: @trip) }
+      redirect_to edit_trip_path(@trip, days_number: @days_number)
+    else
+      render "searches/new"
+    end
+  end
 
   def show
+
   end
 
   def index
@@ -9,6 +20,10 @@ class TripsController < ApplicationController
 
 
   def edit
+       @trip = Trip.find(params[:id])
+    @activities = Activity.where(mood: @trip.mood, budget: @trip.budget)
+    @days_number = params[:days_number].to_i
+    
     @activities = Activity.geocoded
 
     @markers = @activities.map do |activity|
@@ -30,14 +45,12 @@ class TripsController < ApplicationController
       }
     end
   end
-
+  
   def update
   end
-
-  def create
+  
+  private
+  def search_params
+    params.require(:search).permit(:mood, :budget, :days_number, :address, :start_date, :radius)
   end
-
-  def destroy
-  end
-
 end

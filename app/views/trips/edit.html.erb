@@ -1,3 +1,11 @@
+<ol>
+  <% @activities.each do |activity| %>
+    <li><%= activity.name %></li>
+  <% end %>
+</ol>
+
+
+
 <div class="container-map">
   <div class="roadsheet">
 <h1>Feuille de route</h1>
@@ -11,3 +19,8 @@
      </div>
   </div>
 </div>
+
+
+
+<%= link_to("+", trip_selected_activities_path(@trip, activity_id: Activity.first.id), method: :post)  %>
+
