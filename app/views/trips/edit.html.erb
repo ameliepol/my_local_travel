@@ -3,4 +3,24 @@
     <li><%= activity.name %></li>
   <% end %>
 </ol>
+
+
+
+<div class="container-map">
+  <div class="roadsheet">
+<h1>Feuille de route</h1>
+  </div>
+  <div id="map"
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+     <div id="info-popup" class="d-none">
+       <div class="btn-primary">Quit</div>
+       <div class="infos"></div>
+     </div>
+  </div>
+</div>
+
+
+
 <%= link_to("+", trip_selected_activities_path(@trip, activity_id: Activity.first.id), method: :post)  %>
+

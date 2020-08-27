@@ -1,3 +1,8 @@
-<h2><%= activity.name %></h2>
-<p><%= activity.localisation %></p>
-<p><%= activity.fee %></p>
+<div class="mapboxgl-popup-content">
+  <h1><%= activity.name %></h1>
+  <div class="photo">></div>
+  <h2><%= activity.localisation %></h2>
+  <h4> Prix : <%= activity.fee %> €</h4>
+  <p><%= activity.content %></p>
+  <button class="btn-add">Ajouter</button>
+</div>

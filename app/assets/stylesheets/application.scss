@@ -13,3 +13,14 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+#info-popup {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: $success;
+  z-index: 100;
+}
