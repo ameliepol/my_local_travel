@@ -15,7 +15,7 @@ const buildMap = () => {
 
 const infoPopup = document.getElementById("info-popup");
 const infoBox = document.querySelector("#info-popup > .infos");
-const infoBtn = document.querySelector("#info-popup > .btn-primary");
+const infoBtn = document.querySelector("#info-popup > .btn-quit");
 
 infoBtn.addEventListener("click", (e) => {
   infoPopup.classList.add("d-none");
