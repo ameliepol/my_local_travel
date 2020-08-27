@@ -47,6 +47,9 @@ ActiveRecord::Schema.define(version: 2020_08_27_100859) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.text "content"
+    t.float "latitude"
+    t.float "longitude"
+    t.string "picto_url"
   end
 
   create_table "availabilities", force: :cascade do |t|
