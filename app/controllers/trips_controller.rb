@@ -4,6 +4,11 @@ class TripsController < ApplicationController
   end
 
   def index
+
+  end
+
+
+  def edit
     @activities = Activity.geocoded
 
     @markers = @activities.map do |activity|
@@ -24,10 +29,6 @@ class TripsController < ApplicationController
         image_url: helpers.asset_url(truc)
       }
     end
-  end
-
-
-  def edit
   end
 
   def update

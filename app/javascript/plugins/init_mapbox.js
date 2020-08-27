@@ -11,20 +11,35 @@ const buildMap = () => {
   });
 };
 
+
+
+const infoPopup = document.getElementById("info-popup");
+const infoBox = document.querySelector("#info-popup > .infos");
+const infoBtn = document.querySelector("#info-popup > .btn-primary");
+
+infoBtn.addEventListener("click", (e) => {
+  infoPopup.classList.add("d-none");
+})
+
+
 const addMarkersToMap = (map, markers) => {
   markers.forEach((marker) => {
-    const popup = new mapboxgl.Popup().setHTML(marker.infoWindow);
+    // const popup = new mapboxgl.Popup().setHTML(marker.infoWindow);
 
     const element = document.createElement('div');
     element.className = 'marker';
     element.style.backgroundImage = `url('${marker.image_url}')`;
     element.style.backgroundSize = 'contain';
-    element.style.width = '25px';
-    element.style.height = '25px';
+    element.style.width = '30px';
+    element.style.height = '30px';
+
+    element.addEventListener("click", (e) => {
+      infoBox.innerHTML = marker.infoWindow;
+      infoPopup.classList.remove("d-none");
+    })
 
     new mapboxgl.Marker(element)
       .setLngLat([marker.lng, marker.lat])
-      .setPopup(popup)
       .addTo(map);
     });
 };
