@@ -20,7 +20,7 @@ class TripsController < ApplicationController
 
 
   def edit
-    #    @trip = Trip.find(params[:id])
+    # @trip = Trip.find(params[:id])
     # @activities = Activity.where(mood: @trip.mood, budget: @trip.budget)
     # @days_number = params[:days_number].to_i
 
