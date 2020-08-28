@@ -20,10 +20,10 @@ class TripsController < ApplicationController
 
 
   def edit
-       @trip = Trip.find(params[:id])
-    @activities = Activity.where(mood: @trip.mood, budget: @trip.budget)
-    @days_number = params[:days_number].to_i
-    
+    # @trip = Trip.find(params[:id])
+    # @activities = Activity.where(mood: @trip.mood, budget: @trip.budget)
+    # @days_number = params[:days_number].to_i
+
     @activities = Activity.geocoded
 
     @markers = @activities.map do |activity|
@@ -45,10 +45,10 @@ class TripsController < ApplicationController
       }
     end
   end
-  
+
   def update
   end
-  
+
   private
   def search_params
     params.require(:search).permit(:mood, :budget, :days_number, :address, :start_date, :radius)
