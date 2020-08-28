@@ -1,4 +1,6 @@
 puts "Cleaning DB..."
+Day.destroy_all
+Trip.destroy_all
 User.destroy_all
 Activity.destroy_all
 puts "DB destroyed!"
