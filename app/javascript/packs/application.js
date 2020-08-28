@@ -25,7 +25,7 @@ require("channels")
 // External imports
 import "bootstrap";
 import { initMapbox } from '../plugins/init_mapbox';
-import '../components/search';
+// import '../components/search';
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
