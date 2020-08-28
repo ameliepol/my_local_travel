@@ -1,4 +1,3 @@
-
 <div class="container">
   <%= simple_form_for @search, url: trips_path, method: :post,
     wrapper_mappings: {
@@ -20,8 +19,6 @@
       <%= f.input :days_number, as: :radio_buttons, collection: [1, 2, 3] %>
       <%= f.submit %>
   <% end %>
-
-
 </div>
 
 <%= yield :page_scripts %>
