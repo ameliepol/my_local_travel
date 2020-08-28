@@ -3,8 +3,9 @@ class TripsController < ApplicationController
     @search = Search.new(search_params)
     if @search.valid?
       @trip = Trip.new(start_date: @search.start_date, address: @search.address, radius: @search.radius, user: current_user, end_date: @search.start_date, mood: @search.mood, budget: @search.budget)
+      @trip.save!
       @days_number = @search.days_number.times { Day.create(trip: @trip) }
-      redirect_to edit_trip_path(@trip, days_number: @days_number)
+      redirect_to edit_trip_path(@trip)
     else
       render "searches/new"
     end
@@ -20,12 +21,10 @@ class TripsController < ApplicationController
 
 
   def edit
-    @trip = Trip.find(params[:id])
-    @activities = Activity.where(mood: @trip.mood, budget: @trip.budget)
-    @days_number = params[:days_number].to_i
+       @trip = Trip.find(params[:id])
+    @days_number = @trip.days.count
 
-    @activities = Activity.geocoded
-
+    @activities = Activity.where(mood: @trip.mood, budget: @trip.budget).geocoded
     @markers = @activities.map do |activity|
       if activity.category == "Hébergement"
         truc = "picto_hebergement.png"
