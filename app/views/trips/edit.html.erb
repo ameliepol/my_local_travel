@@ -1,12 +1,12 @@
 
 <div class="container-map">
   <div class="roadsheet">
-    <h1>Feuille de route</h1>
-    <ol>
+    <h2>Feuille de route</h2>
+<!--     <ol>
       <% @activities.each do |activity| %>
         <li><%= activity.name %></li>
       <% end %>
-    </ol>
+    </ol> -->
   </div>
 
   <div id="map"
@@ -25,5 +25,4 @@
   <%= javascript_pack_tag "mapbox", 'data-turbolinks-track': 'reload', defer: true  %>
 <% end %>
 
-<%= link_to("+", trip_selected_activities_path(@trip, activity_id: Activity.first.id), method: :post)  %>
 
