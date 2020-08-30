@@ -1,9 +1,39 @@
 <div class="mapboxgl-popup-content">
   <h1><%= activity.name %></h1>
-  <div class="photo">
+
+  <div class="photo-popup">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <%= cl_image_tag "brooks-rice-8-jqqr-rpo0-unsplash_av5uqs", alt: "Activité famille 1", width: 600, height: 400, crop: :fill %>
+        </div>
+        <div class="carousel-item">
+          <%= cl_image_tag "dimitri-houtteman-Cjac9YfloCw-unsplash_xbqnmh", alt: "Activité famille 2", width: 600, height: 400, crop: :fill %>
+        </div>
+        <div class="carousel-item">
+          <%= cl_image_tag "austin-neill-3quTd6dyudg-unsplash_brppcm", alt: "Activité famille 3", width: 600, height: 400, crop: :fill %>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
   </div>
+
+  <div class="popup-content">
   <h2><%= activity.localisation %></h2>
-  <h3> Prix : <%= activity.fee %> €</h3>
+  <h3> Prix : A partir de <%= activity.fee %> €</h3>
   <p><%= activity.content %></p>
+  </div>
   <button class="btn-add"><%= link_to("Ajouter", trip_selected_activities_path(@trip, activity_id: Activity.first.id), method: :post)  %></button>
 </div>
