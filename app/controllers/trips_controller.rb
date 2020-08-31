@@ -19,9 +19,8 @@ class TripsController < ApplicationController
 
   end
 
-
   def edit
-       @trip = Trip.find(params[:id])
+    @trip = Trip.find(params[:id])
     @days_number = @trip.days.count
 
     @activities = Activity.where(mood: @trip.mood, budget: @trip.budget).geocoded

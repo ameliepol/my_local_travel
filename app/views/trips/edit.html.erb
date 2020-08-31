@@ -1,18 +1,29 @@
-
-
-
-
 <div class="container-map">
   <div class="roadsheet">
-<h1>Feuille de route</h1>
-    <ol>
-
-  <% @activities.each do |activity| %>
-    <li><%= activity.name %></li>
-  <% end %>
-</ol>
-
+    <div>
+      <h1>Feuille de route</h1>
+        <% if @days_number ==  1 %>
+          <h2>Jour 1</h2>
+           <% @activities.each do |activity| %>
+              <li><%= activity.name %></li>
+            <% end %>
+        <% elsif @days_number == 2 %>
+          <h2>Jour 1</h2>
+           <% @activities.each do |activity| %>
+              <li><%= activity.name %></li>
+            <% end %>
+          <h2>Jour 2</h2>
+        <% else @days_number == 3 %>
+          <h2>Jour 1</h2>
+            <% @activities.each do |activity| %>
+              <li><%= activity.name %></li>
+            <% end %>
+          <h2>Jour 2</h2>
+          <h2>Jour 3</h2>
+        <% end %>
+    </div>
   </div>
+
   <div id="map"
      data-markers="<%= @markers.to_json %>"
      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
@@ -24,5 +35,3 @@
 </div>
 
 <%= link_to("+", trip_selected_activities_path(@trip, activity_id: Activity.first.id), method: :post)  %>
-
-
