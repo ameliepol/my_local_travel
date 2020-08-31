@@ -10,16 +10,16 @@ const searchAddresses = () => {
         array.push(municipality.nom)
 
       });
-      console.log(array)
+      // console.log(array)
         input.addEventListener('keyup', (event) => {
           let result = [];
           let entry = input.value;
-          let regex = entry;
-          result = array.filter(municipality => municipality.toLowerCase().match(regex))
+          let regex = entry.toLowerCase();
+          result = array.filter(municipality => municipality.toLowerCase().match(regex)).slice(0, 10)
           // let found = municipality.nom.search(regex);
-          console.dir(result);
+          // console.dir(result);
           const list = document.getElementById('list-address')
-          console.dir(list)
+          // console.dir(list)
           while(list.childNodes.length > 0) {
             list.removeChild(list.firstChild)
           }
