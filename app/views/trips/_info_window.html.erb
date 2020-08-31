@@ -10,13 +10,13 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <%= cl_image_tag "brooks-rice-8-jqqr-rpo0-unsplash_av5uqs", alt: "Activité famille 1", width: 600, height: 400, crop: :fill %>
+          <%= cl_image_tag photo_url(activity.photos[0]), alt: "Activité famille 1", width: 600, height: 400, crop: :fill %>
         </div>
         <div class="carousel-item">
-          <%= cl_image_tag "dimitri-houtteman-Cjac9YfloCw-unsplash_xbqnmh", alt: "Activité famille 2", width: 600, height: 400, crop: :fill %>
+          <%= cl_image_tag photo_url(activity.photos[1]), alt: "Activité famille 2", width: 600, height: 400, crop: :fill %>
         </div>
         <div class="carousel-item">
-          <%= cl_image_tag "austin-neill-3quTd6dyudg-unsplash_brppcm", alt: "Activité famille 3", width: 600, height: 400, crop: :fill %>
+          <%= cl_image_tag photo_url(activity.photos[2]), alt: "Activité famille 3", width: 600, height: 400, crop: :fill %>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
