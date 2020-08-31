@@ -23,6 +23,7 @@ class TripsController < ApplicationController
     @trip = Trip.find(params[:id])
     @days_number = @trip.days.count
 
+
     @activities = Activity.where(mood: @trip.mood, budget: @trip.budget).geocoded
     @markers = @activities.map do |activity|
       if activity.category == "Hébergement"
