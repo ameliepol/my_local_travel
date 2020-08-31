@@ -16,17 +16,18 @@ const searchAddresses = () => {
           let entry = input.value;
           let regex = entry.toLowerCase();
           result = array.filter(municipality => municipality.toLowerCase().match(regex)).slice(0, 10)
+
+
           // let found = municipality.nom.search(regex);
           // console.dir(result);
-          const list = document.getElementById('list-address')
+          const list = document.getElementById('select2-list')
           // console.dir(list)
           while(list.childNodes.length > 0) {
             list.removeChild(list.firstChild)
           }
           result.forEach((name) => {
-            let lister = `<li>${name}</li>`
+            let lister =`<option value="${name}">${name}</option>`
             list.insertAdjacentHTML("afterbegin", lister)
-
           });
         });
         // mettre un ecouteur sur chaque li au click
