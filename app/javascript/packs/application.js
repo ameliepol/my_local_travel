@@ -26,6 +26,7 @@ require("channels")
 import "bootstrap";
 // import { initMapbox } from '../plugins/init_mapbox';
 import { initFlatpickr } from '../plugins/flatpickr';
+import { initSelect2 } from '../plugins/init_select2';
 // import '../components/search';
 // import { searchAddresses } from '../components/search';
 
@@ -34,6 +35,7 @@ import { initFlatpickr } from '../plugins/flatpickr';
 
 
 document.addEventListener('turbolinks:load', () => {
+  initSelect2();
   // Call your functions here, e.g:
   // initSelect2();
   // initMapbox();

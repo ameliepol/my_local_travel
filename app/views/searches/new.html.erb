@@ -8,7 +8,13 @@
      <h2> Quel est votre budget? </h2>
       <%= f.input :budget, as: :radio_buttons, collection: Activity.budgets %>
       <h2 >d'Où partez-vous?</h2>
-        <%= f.input :address, input_html: { autocomplete: 'off' }, id:"search_address" %>
+
+
+<!--        <select class="select2" name="country" id="select2-list"> -->
+    <%#= f.input :address, input_html: { autocomplete: 'off' }, id:"search_address" %>
+
+      <%= f.input :address, collection: Search.addresses, input_html: { class: 'select2' } %>
+
         <ul id="list-address">
         </ul>
       </div>
@@ -23,6 +29,6 @@
 
 <%= yield :page_scripts %>
 
-<% content_for :head do %>
-  <%= javascript_pack_tag "autocomplete", 'data-turbolinks-track': 'reload', defer: true  %>
-<% end %>
+<%# content_for :head do %>
+  <%#= javascript_pack_tag "autocomplete", 'data-turbolinks-track': 'reload', defer: true  %>
+<%# end %>
