@@ -19,7 +19,6 @@ class TripsController < ApplicationController
 
   end
 
-
   def edit
     @trip = Trip.find(params[:id])
     @days_number = @trip.days.count

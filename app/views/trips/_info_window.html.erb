@@ -5,5 +5,5 @@
   <h2><%= activity.localisation %></h2>
   <h3> Prix : <%= activity.fee %> €</h3>
   <p><%= activity.content %></p>
-  <button class="btn-add">Ajouter</button>
+  <button class="btn-add"><%= link_to("Ajouter", trip_selected_activities_path(@trip, activity_id: Activity.first.id), method: :post)  %></button>
 </div>

@@ -8,14 +8,13 @@
      <h2> Quel est votre budget? </h2>
       <%= f.input :budget, as: :radio_buttons, collection: Activity.budgets %>
       <h2 >d'Où partez-vous?</h2>
-      <div class="container">
         <%= f.input :address, input_html: { autocomplete: 'off' }, id:"search_address" %>
         <ul id="list-address">
         </ul>
       </div>
       <%= f.input :radius, as: :radio_buttons, collection: ["10km", "25km", "50km"] %>
       <h2>Quand souhaitez-vous partir?</h2>
-      <%= f.input :start_date, as: :date %>
+     <%= f.input :start_date, as: :string, required: false, input_html: { id: "date_start" } %>
       <h2>Pour combien de temps?</h2>
       <%= f.input :days_number, as: :radio_buttons, collection: [1, 2, 3] %>
       <%= f.submit %>
