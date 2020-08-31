@@ -1,3 +1,4 @@
 meta_product_name: "My Local Travel"
 meta_title: "My Local Travel - Voyagez local et durable"
 meta_description: "Une application tout compris: faites votre itinéraire personnalisé, accédez à nos partenaires originaux, rencontrez d'autres voyageurs et partagez des activités, donnez votre avis sur notre carte"
+meta_image: "cabane_dolce.jpg" # should exist in `app/assets/images/`
