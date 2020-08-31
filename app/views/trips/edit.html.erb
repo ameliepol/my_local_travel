@@ -42,9 +42,7 @@
   </div>
 </div>
 
-<%= link_to("+", trip_selected_activities_path(@trip, activity_id: Activity.first.id), method: :post)  %>
 <%= yield :page_scripts %>
-
 <% content_for :head do %>
   <%= javascript_pack_tag "mapbox", 'data-turbolinks-track': 'reload', defer: true  %>
 <% end %>
