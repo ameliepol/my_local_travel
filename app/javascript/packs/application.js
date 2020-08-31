@@ -35,10 +35,12 @@ import { initSelect2 } from '../plugins/init_select2';
 
 
 document.addEventListener('turbolinks:load', () => {
+
+ initFlatpickr();
   initSelect2();
   // Call your functions here, e.g:
   // initSelect2();
   // initMapbox();
-  initFlatpickr();
+
   // searchAddresses();
 });
