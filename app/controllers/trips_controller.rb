@@ -1,12 +1,16 @@
 class TripsController < ApplicationController
   def create
     @search = Search.new(search_params)
+        @moods = Activity.moods
+    @budgets = Activity.budgets
+
     if @search.valid?
       @trip = Trip.new(start_date: @search.start_date, address: @search.address, radius: @search.radius, user: current_user, end_date: @search.start_date, mood: @search.mood, budget: @search.budget)
       @trip.save!
       @days_number = @search.days_number.times { Day.create(trip: @trip) }
       redirect_to edit_trip_path(@trip)
     else
+
       render "searches/new"
     end
   end

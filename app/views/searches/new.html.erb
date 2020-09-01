@@ -1,26 +1,102 @@
-
 <div class="search-container">
+  <div class="row">
 
-    <%= simple_form_for @search, url: trips_path, method: :post,
+      <div class="form-post">
+      <%= simple_form_for @search, url: trips_path, method: :post,
       wrapper_mappings: {
         radio_buttons:    :vertical_collection_inline,
       }  do |f| %>
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
        <h2> Quel voyageur êtes-vous? </h2>
-        <%= f.input :mood, as: :radio_buttons, collection: Activity.moods %>
-       <h2> Quel est votre budget? </h2>
-        <%= f.input :budget, as: :radio_buttons, collection: Activity.budgets %>
-        <h2 >d'Où partez-vous?</h2>
-        <%= f.input :address, input_html: { autocomplete: 'current-address' }, id:"search" %>
+         <form class="simple_form new_search" id="new_search" novalidate="novalidate" action="/trips" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="peva5YqR4Ss4WzwMhVEkK7TZ4xdSiefnZpjZPTSTJKZ01J+9rPQ+7W6LFWJnyXHOjQpjkHM33xa+z+lXp7g9Ow==" />
+          <fieldset class="form-group radio_buttons required search_mood"><legend class="col-form-label pt-0"><abbr title="required"></abbr></legend><input type="hidden" name="search[mood]" value="" />
+            <div class="activity-choices">
+
+              <% @moods.keys.each do | activity |  %>
+                <input type="radio" hidden class="activity-choice" value="<%= activity %>" name="post[category_ids][]" id="post_category_ids_<%= activity %>">
+                <label for="post_category_ids_<%= activity %>" class="activity-choice">
+                  <%= activity %>
+                </label>
+              <% end %>
+            </div>
+          </fieldset>
+        </div>
+
+       <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+         <h2> Quel est votre budget? </h2>
+           <form class="simple_form new_search" id="new_search" novalidate="novalidate" action="/trips" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="peva5YqR4Ss4WzwMhVEkK7TZ4xdSiefnZpjZPTSTJKZ01J+9rPQ+7W6LFWJnyXHOjQpjkHM33xa+z+lXp7g9Ow==" />
+            <fieldset class="form-group radio_buttons required search_budget"><legend class="col-form-label pt-0"><abbr title="required"></abbr></legend><input type="hidden" name="search[budget]" value="" />
+              <div class="activity-choices">
+
+                <% @budgets.keys.each do | activity |  %>
+                  <input type="radio" hidden class="budget-choice" value="<%= activity %>" name="post[category_ids][]" id="post_category_ids_<%= activity %>">
+                  <label for="post_category_ids_<%= activity %>" class="budget-choice">
+                    <%= activity %>
+                  </label>
+                <% end %>
+              </div>
+            </fieldset>
+
+           </div>
+
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+           <h2>D'où partez vous?</h2>
+            <%= f.input :address, collection: Search.addresses, input_html: { class: 'select2' } %>
+            <ul id="list-address">
+           </ul>
+         </div> -->
+<!--
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+         <h2> A quelle distance autour de chez vous? </h2>
+           <form class="simple_form new_search" id="new_search" novalidate="novalidate" action="/trips" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="peva5YqR4Ss4WzwMhVEkK7TZ4xdSiefnZpjZPTSTJKZ01J+9rPQ+7W6LFWJnyXHOjQpjkHM33xa+z+lXp7g9Ow==" />
+            <fieldset class="form-group radio_buttons required search_radius"><legend class="col-form-label pt-0"><abbr title="required"></abbr></legend><input type="hidden" name="search[radius]" value="" />
+              <div class="activity-choices">
+
+                <#% @radiuses.keys.each do | activity |  %>
+                  <input type="radio" hidden class="activity-choice" value="<%= activity %>" name="post[category_ids][]" id="post_category_ids_<%= activity %>">
+                  <label for="post_category_ids_<%= activity %>" class="activity-choice">
+                    <%= activity %>
+                  </label>
+                <#% end %>
+              </div>
+            </fieldset>
+           </div> -->
+
+
+   <!--    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <h2>Quand souhaitez-vous partir?</h2>
+        <%#= f.input :start_date, as: :string, required: false, input_html: { id: "date_start" } %>
+      </div> -->
+
+
+
+
+
+
+           <%= f.button :submit, class: 'btn btn-primary' %>
+
+
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+
+ <!--        <h2>  </h2>
+        <%#= f.input :budget, as: :radio_buttons, collection: Activity.budgets %>
+        <h2 >D'où partez-vous?</h2>
+        <%#= f.input :address, input_html: { autocomplete: 'current-address' }, id:"search" %>
         <ul id="list-address">
 
         </ul>
-        <%= f.input :radius, as: :radio_buttons, collection: ["10km", "20km"] %>
+        <%#= f.input :radius, as: :radio_buttons, collection: ["10km", "20km"] %>
         <h2>Quand souhaitez-vous partir?</h2>
-        <%= f.input :start_date, as: :date %>
+        <%#= f.input :start_date, as: :date %>
         <h2>Pour combien de temps?</h2>
-        <%= f.input :days_number, as: :radio_buttons, collection: [1, 2, 3] %>
-        <%= f.submit %>
-    <% end %>
+        <%#= f.input :days_number, as: :radio_buttons, collection: [1, 2, 3] %>
 
 
-</div>
+ <h2 >d'Où partez-vous?</h2>
+
+
+

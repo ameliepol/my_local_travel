@@ -5,6 +5,7 @@ User.destroy_all
 Activity.destroy_all
 puts "DB destroyed!"
 
+
 puts "Creating users ...."
 
 user1 = User.create!(email: "murielle@gmail.com", password: "password_user1", nickname: "Mumu", photo_url: "", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
@@ -141,3 +142,5 @@ famille_32 = Activity.create!(name: "Banana", fee: 33,  localisation: "Saint-Jea
 famille_33 = Activity.create!(name: "Le Pitey", fee: 34,  localisation: "Martignas-sur-Jalle",  mood: 3, category: 2, photo_url: "",  budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
 
 puts "Activities created!"
+
+
