@@ -1,0 +1,48 @@
+.navigation{
+  position:absolute;
+  top:0;
+  width:100%;
+  z-index:1;
+}
+
+.navbar-right{
+  float:right;
+  padding-right:2%;
+  padding-top: 16px;
+}
+
+.navbar-right a{
+  text-decoration:none;
+  padding:10px;
+  color: #fff;
+  font-family:"Rubik";
+  font-weight:900;
+}
+
+.navbar-right a:hover{
+  text-decoration: none;
+}
+
+.navbar-brand img {
+  width: 230px;
+}
+
+.nav-item.dropdown {
+  display: inline;
+}
+
+.nav-item {
+  display: inline;
+}
+
+.navbar-brand {
+  padding-top: 0px;
+}
+
+.dropdown-menu {
+  color: black;
+  font-weight: 400;
+  background-color: transparent;
+  padding: 0.25rem 1.5rem;
+
+}
