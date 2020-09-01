@@ -5,7 +5,6 @@ class SearchesController < ApplicationController
     @moods = Activity.moods
     @budgets = Activity.budgets
     @radiuses = Trip.radius
-
   end
 
 end

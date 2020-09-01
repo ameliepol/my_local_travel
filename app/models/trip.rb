@@ -9,6 +9,7 @@ class Trip < ApplicationRecord
   validates :budget, presence: true
 
   enum mood: { "Aventurier" => 1, "Détente" => 2, "Famille" => 3, "Epicurien" => 4 }
-  enum budget: { "$" => 1, "$$" => 2, "$$$" => 3 }
-  enum radius: { "10km" => 1, "25km" => 2, "50km" => 3 }
+  enum budget: { "€" => 1, "€€" => 2, "€€€" => 3 }
+  enum radius: { "10km" => 10, "25km" => 25, "50km" => 50 }
 end
+

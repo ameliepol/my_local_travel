@@ -4,12 +4,10 @@ class TripsController < ApplicationController
     @moods = Activity.moods
     @budgets = Activity.budgets
     @radiuses = Trip.radius
-
-raise
     if @search.valid?
       @trip = Trip.new(start_date: @search.start_date, address: @search.address, radius: @search.radius, user: current_user, end_date: @search.start_date, mood: @search.mood, budget: @search.budget)
       @trip.save!
-      @days_number = @search.days_number.times { Day.create(trip: @trip) }
+      @search.days_number.times { Day.create!(trip: @trip) }
       redirect_to edit_trip_path(@trip)
     else
 
@@ -28,7 +26,6 @@ raise
   def edit
     @trip = Trip.find(params[:id])
     @days_number = @trip.days.count
-
 
     @activities = Activity.with_attached_photos.where(mood: @trip.mood, budget: @trip.budget).geocoded
     @markers = @activities.map do |activity|

@@ -1,31 +1,29 @@
+<%= render 'shared/navbar' %>
+
 
 <div class="search-container">
-  <div class="row">
 
-    <div class="form-post">
+
+    <div class="row form-post">
       <%= simple_form_for @search, url: trips_path, method: :post,
       wrapper_mappings: {
         radio_buttons:    :vertical_collection_inline,
       }  do |f| %>
-      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <div class="col-12">
        <h2> Quel voyageur êtes-vous? </h2>
 
           <div class="activity-choices">
-
             <% @moods.each do | mood |  %>
-
             <input type="radio" hidden class="mood-choice" value="<%= mood[0] %>" name="search[mood]" id="post_mood_ids_<%= mood[1] %>">
             <label for="post_mood_ids_<%= mood[1] %>" class="mood-choice">
               <%= mood[0] %>
             </label>
             <% end %>
           </div>
-
       </div>
 
-      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <div class="col-12">
        <h2> Quel est votre budget? </h2>
-
           <div class="activity-choices">
             <% @budgets.each do | budget |  %>
             <input type="radio" hidden class="budget-choice" value="<%= budget[0] %>" name="search[budget]" id="post_budget_ids_<%= budget[1] %>">
@@ -34,31 +32,29 @@
             </label>
             <% end %>
           </div>
-
       </div>
 
-    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+    <div class="col-12">
        <h2> Combien de jours souhaitez-vous partir? </h2>
-
           <div class="activity-choices">
-            <% @days.each do | day |  %>
-            <input type="radio" hidden class="day-choice" value="<%= day[0] %>" name="search[day]" id="post_day_ids_<%= day[1] %>">
-            <label for="post_day_ids_<%= day[1] %>" class="day-choice">
-              <%= day[0] %>
+            <% 3.times do | day |  %>
+            <% newday = day + 1 %>
+            <input type="radio" hidden class="day-choice" value="<%= newday %>" name="search[days_number]" id="post_day_ids_<%= newday %>">
+            <label for="post_day_ids_<%= newday %>" class="day-choice">
+              <%= newday %>
             </label>
             <% end %>
           </div>
-
       </div>
 
-      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <div class="col-12">
        <h2>D'où partez vous?</h2>
        <%= f.input :address, collection: Search.addresses, input_html: { class: 'select2' } %>
        <ul id="list-address">
        </ul>
      </div>
 
-     <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+     <div class="col-12">
        <h2> A quelle distance autour de chez vous? </h2>
           <div class="activity-choices">
             <% @radiuses.each do | radius |  %>
@@ -73,16 +69,14 @@
       </div>
 
 
-      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <div class="col-12">
         <h2>Quand souhaitez-vous partir?</h2>
         <%= f.input :start_date, as: :string, required: false, input_html: { id: "date_start" } %>
       </div>
 
       <%= f.button :submit, class: 'btn btn-primary' %>
-
-
       <% end %>
-    </div>
+
   </div>
 </div>
 
@@ -99,12 +93,6 @@
 
 
 
-
-
-
-<!-- <%# content_for :head do %>
-  <%#= javascript_pack_tag "autocomplete", 'data-turbolinks-track': 'reload', defer: true  %>
-  <%# end %> -->
 
 
 

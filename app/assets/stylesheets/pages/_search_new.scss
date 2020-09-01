@@ -1,5 +1,13 @@
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+}
 .form-post {
+  width: 80%;
+  text-align: center;
+  justify-content: space-between;
   background: $my-beige;
   font-family: "Rubik";
   margin-top: 50px;
@@ -22,9 +30,9 @@
 
 
 .activity-choices {
-  display: flex;
-  justify-content: space-between;
+
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 20px 0;
 }
 
@@ -80,3 +88,22 @@
   opacity: 1;
   }
 }
+
+.day-choice {
+  background: #b7b7b7;
+  padding: 20px;
+  border-radius: 5px;
+  opacity: .4;
+  flex: 0 0 30%;
+  text-align: center;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  &.active {
+  background: white;
+  color: black;
+  opacity: 1;
+  }
+}
+

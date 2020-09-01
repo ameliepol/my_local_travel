@@ -28,3 +28,12 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+  $("label.day-choice").click(function(e){
+    console.dir(e)
+    $("label.day-choice").not(e.currentTarget).removeClass("active");
+    console.log("hello")
+    $(this).toggleClass("active");
+
+  });
+});
