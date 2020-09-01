@@ -40,6 +40,10 @@ gem 'cloudinary', '~> 1.12.0'
 
 gem 'geocoder'
 
+gem 'select2-rails', '~> 4.0', '>= 4.0.3'
+
+gem 'rest-client'
+
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'

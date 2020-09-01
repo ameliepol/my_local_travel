@@ -5,4 +5,9 @@ class Search < ApplicationRecord
   validates :address, presence: true
   validates :start_date, presence: true
   validates :radius, presence: true
+
+  def self.addresses
+    results = RestClient.get("https://geo.api.gouv.fr/departements/33/communes")
+    return JSON.parse(results.body).map{ |address| [address["nom"], address["nom"]]  }
+  end
 end
