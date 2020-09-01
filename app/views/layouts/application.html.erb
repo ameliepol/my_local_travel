@@ -5,6 +5,10 @@
     <%= favicon_link_tag %>
     <meta name="description" content="<%= meta_description %>">
 
+
+     <%= csrf_meta_tag %>
+     <meta name="csrf-token" content="I+nZnT$#Twefelfjiself" />
+
     <!-- Facebook Open Graph data -->
     <meta property="og:title" content="<%= meta_title %>" />
     <meta property="og:type" content="website" />
@@ -23,8 +27,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>  
+
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
     <link rel="stylesheet" href="https://raw.githubusercontent.com/select2/select2/develop/dist/css/select2.css">
     <script
         src="https://code.jquery.com/jquery-3.5.1.min.js"
