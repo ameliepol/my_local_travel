@@ -39,5 +39,3 @@ const searchAddresses = () => {
 
 export { searchAddresses };
 
-
-

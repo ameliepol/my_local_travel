@@ -1,0 +1,26 @@
+.search-container {
+  display: flex;
+
+  height: 100%;
+  width: 100%;
+  background: white;
+  font-family: "Rubik";
+}
+
+.search-container
+
+.simple_form.new_search {
+  width: 100%;
+  padding: 20px;
+  margin-top: 30px;
+  background: $my-beige;
+  border-radius: 5px;
+
+  h2 {
+    color: $my-green;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bolder;
+  }
+}
+

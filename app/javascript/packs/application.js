@@ -25,6 +25,9 @@ require("channels")
 // External imports
 import "bootstrap";
 // import { initMapbox } from '../plugins/init_mapbox';
+
+// import '../components/search';
+import "../components/tag_search";
 import { initFlatpickr } from '../plugins/flatpickr';
 import { initSelect2 } from '../plugins/init_select2';
 // import '../components/search';
@@ -43,4 +46,5 @@ document.addEventListener('turbolinks:load', () => {
   // initMapbox();
 
   // searchAddresses();
+
 });
