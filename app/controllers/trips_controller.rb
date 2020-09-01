@@ -1,9 +1,11 @@
 class TripsController < ApplicationController
   def create
     @search = Search.new(search_params)
-        @moods = Activity.moods
+    @moods = Activity.moods
     @budgets = Activity.budgets
+    @radiuses = Trip.radius
 
+raise
     if @search.valid?
       @trip = Trip.new(start_date: @search.start_date, address: @search.address, radius: @search.radius, user: current_user, end_date: @search.start_date, mood: @search.mood, budget: @search.budget)
       @trip.save!
@@ -20,7 +22,7 @@ class TripsController < ApplicationController
   end
 
   def index
-    @trip = Trip.all.order(updated_at: :desc)
+    @trips = Trip.all.order(updated_at: :desc)
   end
 
   def edit

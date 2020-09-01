@@ -4,6 +4,7 @@ class SearchesController < ApplicationController
     @search = Search.new
     @moods = Activity.moods
     @budgets = Activity.budgets
+    @radiuses = Trip.radius
 
   end
 
