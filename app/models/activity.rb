@@ -1,7 +1,7 @@
 class Activity < ApplicationRecord
   has_many :availabilities
   has_many :reviews
-  has_one_attached :photo
+  has_many_attached :photos
   has_many :selected_activities
 
   enum mood: { "Aventurier" => 1, "Détente" => 2, "Famille" => 3, "Epicurien" => 4 }

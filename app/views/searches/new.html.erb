@@ -1,3 +1,4 @@
+
 <div class="search-container">
   <div class="row">
 
@@ -68,11 +69,6 @@
         <%#= f.input :start_date, as: :string, required: false, input_html: { id: "date_start" } %>
       </div> -->
 
-
-
-
-
-
            <%= f.button :submit, class: 'btn btn-primary' %>
 
 
@@ -88,7 +84,12 @@
         <%#= f.input :address, input_html: { autocomplete: 'current-address' }, id:"search" %>
         <ul id="list-address">
 
+
+      <%= f.input :address, collection: Search.addresses, input_html: { class: 'select2' } %>
+
+        <ul id="list-address">
         </ul>
+
         <%#= f.input :radius, as: :radio_buttons, collection: ["10km", "20km"] %>
         <h2>Quand souhaitez-vous partir?</h2>
         <%#= f.input :start_date, as: :date %>
@@ -99,4 +100,11 @@
  <h2 >d'Où partez-vous?</h2>
 
 
+
+<%= yield :page_scripts %>
+
+
+<%# content_for :head do %>
+  <%#= javascript_pack_tag "autocomplete", 'data-turbolinks-track': 'reload', defer: true  %>
+<%# end %>
 

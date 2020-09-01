@@ -201,6 +201,7 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    select2-rails (4.0.13)
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
@@ -272,7 +273,9 @@ DEPENDENCIES
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.2)
   redis (~> 4.0)
+  rest-client
   sass-rails (>= 6)
+  select2-rails (~> 4.0, >= 4.0.3)
   selenium-webdriver
   simple_form
   spring

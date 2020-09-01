@@ -20,15 +20,15 @@ class TripsController < ApplicationController
   end
 
   def index
-
+    @trip = Trip.all.order(updated_at: :desc)
   end
 
-
   def edit
-       @trip = Trip.find(params[:id])
+    @trip = Trip.find(params[:id])
     @days_number = @trip.days.count
 
-    @activities = Activity.where(mood: @trip.mood, budget: @trip.budget).geocoded
+
+    @activities = Activity.with_attached_photos.where(mood: @trip.mood, budget: @trip.budget).geocoded
     @markers = @activities.map do |activity|
       if activity.category == "Hébergement"
         truc = "picto_hebergement.png"

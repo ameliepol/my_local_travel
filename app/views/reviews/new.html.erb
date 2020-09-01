@@ -1,0 +1,5 @@
+<%= simple_form_for [@trip, @review] do |f| %>
+  <%= f.input :content %>
+  <%= f.file_field :photos, multiple: true, direct_upload: true %>
+  <%= f.button :submit %>
+<% end %>
