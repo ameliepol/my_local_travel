@@ -1,3 +1,13 @@
+GIT
+  remote: https://github.com/Typeform/create-api-gem.git
+  revision: acbf25a13e52569645a460a19a945dbba3663a21
+  specs:
+    create_api_gem (0.0.1)
+      ffaker
+      json
+      rack
+      rest-client (>= 2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -96,6 +106,7 @@ GEM
       railties (>= 3.2)
     erubi (1.9.0)
     execjs (2.7.0)
+    ffaker (2.17.0)
     ffi (1.13.1)
     font-awesome-sass (5.13.0)
       sassc (>= 1.11)
@@ -109,6 +120,7 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.0)
       activesupport (>= 5.0.0)
+    json (2.3.1)
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -261,6 +273,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   cloudinary (~> 1.12.0)
+  create_api_gem!
   devise
   dotenv-rails
   font-awesome-sass
