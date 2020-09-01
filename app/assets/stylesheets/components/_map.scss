@@ -3,12 +3,23 @@
 }
 
 #map {
+  position: relative;
   justify-content: right;
   height: 100vh;
   width:60%;
   position: sticky;
   right: 0px;
   top: 0;
+}
+
+#legend {
+  position: absolute;
+  text-align: left;
+  z-index: 1;
+  height: 120px;
+  width: 123px;
+  justify-content: right;
+  background-color: white;
 }
 
 .mapboxgl-popup {
@@ -45,12 +56,4 @@ font-weight: 500;
 
 .roadsheet {
   width: 40%;
-}
-
-.legend {
-  position: absolute;
-  height: 30px;
-  width: 700px;
-  justify-content: right;
-  background-color: white;
 }

@@ -1,5 +1,6 @@
 import mapboxgl from 'mapbox-gl';
 import MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
+import { incrementedList } from '../components/add_activity';
 
 const mapElement = document.getElementById('map');
 
@@ -36,6 +37,7 @@ const addMarkersToMap = (map, markers) => {
     element.addEventListener("click", (e) => {
       infoBox.innerHTML = marker.infoWindow;
       infoPopup.classList.remove("d-none");
+      incrementedList();
     })
 
     new mapboxgl.Marker(element)
