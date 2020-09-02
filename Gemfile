@@ -44,6 +44,8 @@ gem 'select2-rails', '~> 4.0', '>= 4.0.3'
 
 gem 'rest-client'
 
+gem 'create_api_gem', git: 'https://github.com/Typeform/create-api-gem.git'
+
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'

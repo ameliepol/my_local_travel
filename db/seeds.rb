@@ -8,6 +8,7 @@ User.destroy_all
 Activity.destroy_all
 puts "DB destroyed!"
 
+
 puts "Creating users ...."
 
 user1 = User.create!(email: "murielle@gmail.com", password: "password_user1", nickname: "Mumu", photo_url: "", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
@@ -129,7 +130,6 @@ Trip.create!(start_date: Date.today, end_date: Date.today, user: User.first, add
 #   {io: file3, filename: 'file3.jpg', content_type: 'image/png'}
 # ])
 # activity_1.save
-
 
 # file4 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992676/actv2_1_xw0d79.jpg')
 # file5 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992677/actv2_3_rzvuqt.jpg')
@@ -423,7 +423,6 @@ activity_29.photos.attach([
   {io: file87, filename: 'file87.jpg', content_type: 'image/png'}
 ])
 activity_29.save
-
 
 file88 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv14_1_n1tck3.jpg')
 file89 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv14_2_vvzwbe.jpg')
