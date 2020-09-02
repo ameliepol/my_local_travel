@@ -1,4 +1,6 @@
 class SelectedActivitiesController < ApplicationController
+  skip_before_action :verify_authenticity_token, :only => [:create]
+
   def create
     @selected_activity = SelectedActivity.new
     @trip = Trip.find(params[:trip_id])
@@ -9,8 +11,10 @@ class SelectedActivitiesController < ApplicationController
     @selected_activity.activity = @activity
 
     @selected_activity.save
-    redirect_to edit_trip_path(@trip)
+    respond_to do |format|
+      format.html { redirect_to edit_trip_path(@trip) }
+      format.js
+    end
   end
-
 
 end

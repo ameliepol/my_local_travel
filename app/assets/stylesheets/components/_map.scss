@@ -3,12 +3,38 @@
 }
 
 #map {
+  position: relative;
   justify-content: right;
   height: 100vh;
   width:60%;
   position: sticky;
   right: 0px;
   top: 0;
+
+    h4 {
+      background-color: white;
+      font-family: Work Sans;
+      font-size: 12px;
+      padding: 0px;
+      margin: 0px;
+    }
+  }
+
+  .legend-ctnr {
+  // position: absolute;
+  // z-index: 1;
+  padding-top: 590px;
+  padding-left: 680px;
+}
+
+#legend {
+  position: absolute;
+  font-family: Work Sans;
+  text-align: left;
+  z-index: 1;
+  height: 130px;
+  width: 135px;
+  justify-content: right;
 }
 
 .mapboxgl-popup {
@@ -43,14 +69,8 @@ font-weight: 500;
   }
 }
 
+
+
 .roadsheet {
   width: 40%;
-}
-
-.legend {
-  position: absolute;
-  height: 30px;
-  width: 700px;
-  justify-content: right;
-  background-color: white;
 }
