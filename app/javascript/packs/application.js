@@ -30,6 +30,7 @@ import "bootstrap";
 import "../components/tag_search";
 import { initFlatpickr } from '../plugins/flatpickr';
 import { initSelect2 } from '../plugins/init_select2';
+import { Sortable } from '../plugins/init_sortable';
 // import '../components/search';
 // import { searchAddresses } from '../components/search';
 
