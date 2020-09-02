@@ -36,12 +36,13 @@
  }
 
  p {
-   font-size: 12px;
-   text-transform: uppercase;
-   line-height: 20px;
-   color: $body-color;
-   padding: 20px 0;
-   margin: 0;
+  font-family: Work Sans;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 20px;
+  color: $body-color;
+  padding: 20px 0;
+  margin: 0;
 }
 }
 
@@ -64,6 +65,7 @@
   margin: 0px;
   padding-top: 30px;
   padding-left: 150px;
+  padding-bottom: 40px;
   align-content: space-around;
   max-width: 80%;
   max-height: 300px;
@@ -75,7 +77,8 @@
 }
 
 .popup-content {
-  padding-top: 60px;
+  font-family: Work Sans;
+  padding-top: 50px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -84,24 +87,26 @@
   outline: 10px;
   border: 10px;
   background: none;
-  border: 1px solid #d9d9d9;
-  padding: 8px 0px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  border: 2px solid #d9d9d9;
+  padding: 8px;
+  // margin-top: 5px;
+  margin-bottom: 30px;
   color: $body-color;
   text-decoration: none;
   text-transform: uppercase;
-  width: 125px;
-  font-family: inherit;
+  width: 150px;
+  font-family: Work Sans;
   margin-right: 5px;
   // transition: all 0.3s ease;
   font-weight: 500;
+  font-weight: bold;
 
   &:hover {
    border: 1px solid #aedaa6;
    color: #aedaa6;
    cursor: pointer;
    text-decoration: none;
+   background-color: #aedaa6;
 
   }
 }

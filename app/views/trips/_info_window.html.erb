@@ -10,13 +10,13 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <%= cl_image_tag photo_url(activity.photos[0]), alt: "Activité famille 1", width: 600, height: 400, crop: :fill %>
+          <%= cl_image_tag photo_url(activity.photos[0]), alt: "Photo activité 1", width: 600, height: 400, crop: :fill %>
         </div>
         <div class="carousel-item">
-          <%= cl_image_tag photo_url(activity.photos[1]), alt: "Activité famille 2", width: 600, height: 400, crop: :fill %>
+          <%= cl_image_tag photo_url(activity.photos[1]), alt: "Photo activité 2", width: 600, height: 400, crop: :fill %>
         </div>
         <div class="carousel-item">
-          <%= cl_image_tag photo_url(activity.photos[2]), alt: "Activité famille 3", width: 600, height: 400, crop: :fill %>
+          <%= cl_image_tag photo_url(activity.photos[2]), alt: "Photo activité 3", width: 600, height: 400, crop: :fill %>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -35,5 +35,5 @@
   <h3> Prix : A partir de <%= activity.fee %> €</h3>
   <p><%= activity.content %></p>
   </div>
-  <button class="btn-add"><%= link_to("Ajouter", trip_selected_activities_path(@trip, activity_id: Activity.first.id), method: :post)  %></button>
+  <button class="btn-add"><%= link_to("Ajouter à ma feuille de route", trip_selected_activities_path(@trip, activity_id: Activity.first.id), method: :post, remote: true)  %></button>
 </div>
