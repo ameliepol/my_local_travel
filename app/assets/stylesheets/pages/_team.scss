@@ -1,0 +1,116 @@
+.team {
+  background: white;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+}
+
+.team-main {
+
+  width: 80%;
+  border-radius: 5px;
+  background-color: $my-beige;
+  margin-top: 30px;
+  padding-top: 15px;
+
+
+}
+
+.team-main h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Rubik";
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-right: 170px;
+  padding-left: 170px;
+  padding-bottom: 40px;
+
+
+  // margin: 30px 10px;
+}
+
+.card-team {
+  // overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+
+
+}
+
+.card-team > img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+
+
+}
+
+.card-team h2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 2px;
+  padding: 4px;
+  font-family: "Rubik";
+}
+
+.card-team p {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bolder;
+  font-family: "Rubik";
+  opacity: .7;
+  margin: 0;
+}
+
+.card-team-infos {
+  padding: 6px;
+  padding-top: -2px;
+
+
+}
+
+
+.card-team-infos .card-team-user {
+
+  // right: 16px;
+  // top: -20px;
+  // width: 40px;
+}
+
+
+.team-links {
+display: flex;
+justify-content: space-around;
+}
+
+.team-links {
+display: flex;
+justify-content: space-around;
+}
+
+.team-links p {
+text-align: right;
+}
+
+.team-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  // font-size: 24px;
+  text-align: left;
+}
+
+.team-links a:hover {
+  opacity: 1;
+}

@@ -5,10 +5,10 @@
     <% end %>
     <div class="navbar-right">
       <% if user_signed_in? %>
-        <%= link_to "Mon prochain voyage", new_search_path %>
-        <%= link_to "Nos valeurs", "/pages/charte" %>
-        <%= link_to "Notre équipe", "/pages/team" %>
-        <%= link_to "Contact", "/pages/contact" %>
+        <%= link_to "Mon prochain voyage", new_search_path, class: "btn btn-white"%>
+        <%= link_to "Nos valeurs", "/pages/charte", class: "btn btn-white"%>
+        <%= link_to "Notre équipe", "/pages/team", class: "btn btn-white"%>
+        <%= link_to "Contact", "/pages/contact", class: "btn btn-white" %>
         <li class="nav-item dropdown">
           <%= image_tag "tata_murielle.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
