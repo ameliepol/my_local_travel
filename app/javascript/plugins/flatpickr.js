@@ -1,6 +1,5 @@
 const flatpickr = require("flatpickr");
 
-//import flatpickr from "flatpickr";
 const element = document.getElementById("date_start")
 
 const initFlatpickr = () => {

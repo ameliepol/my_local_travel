@@ -3,20 +3,19 @@
 <div class="container-map">
   <div class="roadsheet">
     <h1>Feuille de route</h1>
-      <div id="stock-zone">
-        <ul>
-        </ul>
+      <div id="stock_zone">
+        Zone de stockage
       </div>
       <% if @days_number ==  1 %>
-        <div id="day-one">Jour 1</div>
+        <div id="day_one">Jour 1</div>
 
       <% elsif @days_number == 2 %>
-        <div id="day-one">Jour 1</div>
-        <div id="day-two">Jour 2</div>
+        <div id="day_one">Jour 1</div>
+        <div id="day_two">Jour 2</div>
       <% else @days_number == 3 %>
-        <div id="day-one">Jour 1</div>
-        <div id="day-two">Jour 2</div>
-        <div id="day-three">Jour 3</div>
+        <div id="day_one">Jour 1</div>
+        <div id="day_two">Jour 2</div>
+        <div id="day_three">Jour 3</div>
       <% end %>
     </div>
   </div>
@@ -39,22 +38,6 @@
       <div class="infos"></div>
     </div>
   </div>
-</div>
-
-<div id="list" class="list-group">
-  <div class="list-group-item">Item 1</div>
-  <div class="list-group-item">Item 2</div>
-  <div class="list-group-item">Item 3</div>
-  <div class="list-group-item">Item 4</div>
-  <div class="list-group-item">Item 5</div>
-</div>
-
-<div id="list2" class="list-group">
-  <div class="list-group-item tinted">Item 1</div>
-  <div class="list-group-item tinted">Item 2</div>
-  <div class="list-group-item tinted">Item 3</div>
-  <div class="list-group-item tinted">Item 4</div>
-  <div class="list-group-item tinted">Item 5</div>
 </div>
 
 <%= yield :page_scripts %>

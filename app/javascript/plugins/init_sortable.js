@@ -1,19 +1,47 @@
 import { Sortable, MultiDrag } from 'sortablejs';
 
-Sortable.mount(new MultiDrag());
+const zone = document.getElementById('stock_zone');
+const one = document.getElementById('day_one');
+const two = document.getElementById('day_two');
+const three = document.getElementById('day_three');
 
-Sortable.create(list, {
-  group: 'shared',
-  multiDrag: true,
-  selectedClass: "selected",
-  animation: 150
-});
+const initSortable = () => {
+  Sortable.mount(new MultiDrag());
+  if (zone) {
+    Sortable.create(stock_zone, {
+      group: 'shared',
+      multiDrag: true,
+      selectedClass: "selected",
+      animation: 150
+    })
+  };
 
-Sortable.create(list2, {
-  group: 'shared',
-  multiDrag: true,
-  selectedClass: "selected",
-  animation: 150
-});
+  if (one) {
+    Sortable.create(day_one, {
+      group: 'shared',
+      multiDrag: true,
+      selectedClass: "selected",
+      animation: 150
+    })
+  };
 
-export { Sortable };
+  if (two) {
+    Sortable.create(day_two, {
+      group: 'shared',
+      multiDrag: true,
+      selectedClass: "selected",
+      animation: 150
+    })
+  };
+
+  if (three) {
+    Sortable.create(day_three, {
+      group: 'shared',
+      multiDrag: true,
+      selectedClass: "selected",
+      animation: 150
+    })
+  };
+}
+
+export { initSortable };
