@@ -17,6 +17,7 @@ class TripsController < ApplicationController
 
   def show
     @trip = Trip.find(params[:id])
+
     @markers = Activity.all.map do |activity|
       if activity.category == "Hébergement"
         truc = "picto_hebergement.png"
@@ -48,6 +49,7 @@ class TripsController < ApplicationController
 
   def edit
     @trip = Trip.find(params[:id])
+
     @days_number = @trip.days.count
 
     @activities = Activity.with_attached_photos.where(mood: @trip.mood, budget: @trip.budget).geocoded
@@ -72,6 +74,8 @@ class TripsController < ApplicationController
   end
 
   def update
+    @trip = Trip.find(params[:id])
+    redirect_to trip_path(@trip)
   end
 
   private

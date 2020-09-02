@@ -1,3 +1,4 @@
+
 <%= render 'shared/navbar' %>
 
 <div class="container-map">
@@ -17,9 +18,12 @@
         <div id="day_two">Jour 2</div>
         <div id="day_three">Jour 3</div>
       <% end %>
+
+      <div class="btn-valid-trip" id="valider-trip" data-url="<%= trip_url(@trip.id) %>">Valider trip</div>
     </div>
   </div>
   <div class="btn-primary" id="valider-trip">Valider trip</div>
+
   <div id="map"
     data-markers="<%= @markers.to_json %>"
     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">

@@ -34,6 +34,7 @@
   <h2><%= activity.localisation %></h2>
   <h3> Prix : A partir de <%= activity.fee %> €</h3>
   <p><%= activity.content %></p>
+  <div class="btn-add">Ajouter à ma feuille de route</div>
+  <!-- <div class="btn-add"><%= link_to("Ajouter à ma feuille de route", trip_selected_activities_path(@trip, activity_id: Activity.first.id), method: :post, remote: true)  %></div> -->
   </div>
-  <button class="btn-add"><%= link_to("Ajouter à ma feuille de route", trip_selected_activities_path(@trip, activity_id: Activity.first.id), method: :post, remote: true)  %></button>
 </div>

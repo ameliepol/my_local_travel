@@ -23,8 +23,12 @@
   .legend-ctnr {
   // position: absolute;
   // z-index: 1;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
   padding-top: 590px;
-  padding-left: 680px;
+  padding-left: 710px;
 }
 
 #legend {
@@ -50,26 +54,22 @@
   background-color: $success;
 }
 
-button .btn-add {
-background: none;
-border: 1px solid #d9d9d9;
-padding: 8px 0px;
-margin-bottom: 30px;
-color: $body-color;
-text-transform: uppercase;
-width: 125px;
-margin-right: 5px;
-font-weight: 500;
+.btn-valid-trip {
+  position: absolute;
+  background-color: $primary;
+  color: white;
+  padding: 10px;
+  margin-left: 200px;
+  margin-top: 50px;
+  border-radius: 5px;
+  font-family: Rubik;
 
   &:hover {
- border: 1px solid #aedaa6;
- color: #aedaa6;
- cursor: pointer;
-
+    border: 1px solid #aedaa6;
+    color: #aedaa6;
+    cursor: pointer;
   }
 }
-
-
 
 .roadsheet {
   width: 40%;

@@ -10,7 +10,7 @@
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 
  h1 {
-   color: $body-color;
+   color: black;
    font-weight: 300;
    padding-top: 15px;
    text-transform: uppercase;
@@ -20,7 +20,7 @@
  }
 
  h2 {
-  color: $body-color;
+  color: black;
   margin: 0;
   font-size: 24px;
   text-transform: uppercase;
@@ -29,7 +29,7 @@
 
  h3 {
    margin: 0;
-   color: $body-color;
+   color: black;
    text-transform: uppercase;
    font-weight: 500;
    font-size: 16px
@@ -40,7 +40,7 @@
   font-size: 12px;
   text-transform: uppercase;
   line-height: 20px;
-  color: $body-color;
+  color: black;
   padding: 20px 0;
   margin: 0;
 }
@@ -54,7 +54,7 @@
   padding-right: 10px;
 
     &:hover {
-   color: #aedaa6;
+   color: $primary;
    cursor: pointer;
 
   }
@@ -84,29 +84,40 @@
 }
 
 .btn-add {
-  outline: 10px;
-  border: 10px;
-  background: none;
-  border: 2px solid #d9d9d9;
-  padding: 8px;
-  // margin-top: 5px;
-  margin-bottom: 30px;
-  color: $body-color;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 150px;
-  font-family: Work Sans;
-  margin-right: 5px;
-  // transition: all 0.3s ease;
-  font-weight: 500;
-  font-weight: bold;
+  position: flex;
+  background-color: $primary;
+  color: white;
+  width: 170px;
+  padding: 10px;
+  margin-left: 300px;
+  justify-content: center;
+  margin-top: 12px;
+  border-radius: 5px;
+  font-family: Rubik;
+  font-size: 16px;
 
   &:hover {
-   border: 1px solid #aedaa6;
-   color: #aedaa6;
-   cursor: pointer;
-   text-decoration: none;
-   background-color: #aedaa6;
-
+    border: 1px solid #aedaa6;
+    color: #aedaa6;
+    cursor: pointer;
   }
+
+// .btn-add a {
+//     font-color: white;
+//   }
+ //  border: 1px solid #d9d9d9;
+ //  border-radius: 5px;
+ //  padding: 15px 0;
+ //  margin-bottom: 30px;
+ //  background-color: $success;
+ //  font-color: $success;
+ //  text-transform: uppercase;
+ //  width: 125px;
+ //  margin-right: 5px;
+ //  font-weight: 500;
+
+ //  &:hover {
+ // border: 1px solid #aedaa6;
+ // color: #aedaa6;
+ // cursor: pointer;
 }
