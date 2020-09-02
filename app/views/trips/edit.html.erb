@@ -25,14 +25,12 @@
     data-markers="<%= @markers.to_json %>"
     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
 
-    <!-- <div class="legend-ctnr"> -->
       <div id="legend">
       <h4><%= image_tag "picto_hebergement.png", width: 25 %> Hébergement</h4>
       <h4><%= image_tag "picto_alimentation.png", width: 25 %> Alimentation</h4>
       <h4><%= image_tag "picto_diurne.png", width: 25 %> Sortie en journée</h4>
       <h4><%= image_tag "picto_nocturne.png", width: 25 %> Sortie en soirée</h4>
       </div>
-    <!-- </div> -->
 
     <div id="info-popup" class="d-none">
       <div class="btn-quit">x</div>
