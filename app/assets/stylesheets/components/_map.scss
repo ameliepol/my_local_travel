@@ -11,20 +11,21 @@
   right: 0px;
   top: 0;
 
-    h3 {
-    font-size: 16px;
-    font-family: Work Sans;
-    font-weight: bold;
-    padding-left: 4px;
-    padding-top: 4px;
-    }
-
-    p {
+    h4 {
+      background-color: white;
       font-family: Work Sans;
+      font-size: 12px;
       padding: 0px;
       margin: 0px;
     }
   }
+
+  .legend-ctnr {
+  // position: absolute;
+  // z-index: 1;
+  padding-top: 590px;
+  padding-left: 680px;
+}
 
 #legend {
   position: absolute;
@@ -34,7 +35,6 @@
   height: 130px;
   width: 135px;
   justify-content: right;
-  background-color: white;
 }
 
 .mapboxgl-popup {

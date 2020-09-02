@@ -8,16 +8,18 @@ const validerTrip = () => {
       const dayThree = document.getElementById('day-three');
 
     // on crée un objet vide trip
-      let trip = [];
+      let trip = {};
 
-      // if (dayOne) {
+      if (dayOne) {
         const dayOneList = dayOne.querySelectorAll('.activity-list');
         // on transforme dayOneList en une liste de strings
-        dayOneList.forEach((selectedActivity) => {
-        trip.push(selectedActivity.innerText);
+        let activityListDayOne = [];
+        dayOneList.forEach((activity) => {
+        activityListDayOne.push(activity.innerText);
         });
-      // };
-      console.log(trip);
+        trip.dayOne = "activityListDayOne";
+      };
+      console.log(activityListDayOne);
         //on insère cette liste comme valeur de Trip poour la clé dayOne
 
       // if (dayTwo) {
