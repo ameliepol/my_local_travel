@@ -37,7 +37,7 @@ class TripsController < ApplicationController
     end
 
     @coords = Activity.all.map do |activity|
-      "#{activity[:longitude]},#{activity[:latitude]}"
+      "#{activity.longitude},#{activity.latitude}"
     end
   end
 

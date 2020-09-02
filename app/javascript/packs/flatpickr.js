@@ -1,8 +1,5 @@
 const flatpickr = require("flatpickr");
-
-//import flatpickr from "flatpickr";
-const element = document.getElementById("date_start")
-
+const element = document.getElementById("date_start");
 const initFlatpickr = () => {
   if (element) {
     flatpickr(element, {
@@ -12,6 +9,5 @@ const initFlatpickr = () => {
       dateFormat: "d-m-Y"
     });
   }
-}
-
-export { initFlatpickr };
+};
+initFlatpickr();

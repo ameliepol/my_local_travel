@@ -5,6 +5,16 @@
   z-index:1;
 }
 
+.home_video {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: grey;
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
+}
+
 .navbar-right{
   float:right;
   padding-right:2%;
