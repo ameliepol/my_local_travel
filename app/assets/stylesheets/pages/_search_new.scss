@@ -14,30 +14,42 @@
   justify-content: space-between;
   background: $my-beige;
   font-family: "Rubik";
-  margin-top: 30px;
-  padding: 20px;
+  margin-top: 20px;
   border-radius: 5px;
+  h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    color: $my-green;
+    margin-bottom: 20px;
+  }
   h2 {
     text-align: center;
     font-weight: bold;
     font-size: 25px;
     color: $my-green;
-    margin-bottom: 50px;
-    margin-top: 0px;
+    margin-bottom: 20px;
+
   }
   .btn {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     font-weight: bold;
+
   }
 }
 
+.activity {
+  display: flex;
+  align-items: top;
+}
 
 .activity-choices {
 
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 20px 0;
+  margin-bottom: 10px;
+  padding-top: -10px;
 }
 
 .mood-choice {

@@ -2,16 +2,13 @@
 
 
 <div class="search-container">
-
-
     <div class="row form-post">
       <%= simple_form_for @search, url: trips_path, method: :post,
       wrapper_mappings: {
         radio_buttons:    :vertical_collection_inline,
       }  do |f| %>
       <div class="col-12">
-       <h2> Quel voyageur êtes-vous? </h2>
-
+       <h1> Quel voyageur êtes-vous? </h1>
           <div class="activity-choices">
             <% @moods.each do | mood |  %>
             <input type="radio" hidden class="mood-choice" value="<%= mood[0] %>" name="search[mood]" id="post_mood_ids_<%= mood[1] %>">
@@ -47,11 +44,14 @@
           </div>
       </div>
 
-      <div class="col-12">
-       <h2>D'où partez vous?</h2>
-       <%= f.input :address, collection: Search.addresses, input_html: { class: 'select2' } %>
+      <div class="col-12 btn">
+          <h2>D'où partez-vous?</h2>
+
+        <div  class="activity-choices">
+       <%= f.input :address, collection: Search.addresses, label: false, input_html: { class: 'select2' } %>
        <ul id="list-address">
        </ul>
+       </div>
      </div>
 
      <div class="col-12">
@@ -63,20 +63,19 @@
                 <%= radius[0] %>
               </label>
             <% end %>
-
           </div>
-
       </div>
 
 
-      <div class="col-12">
+      <div class="col-12 btn">
         <h2>Quand souhaitez-vous partir?</h2>
-        <%= f.input :start_date, as: :string, required: false, input_html: { id: "date_start" } %>
+        <%= f.input :start_date, as: :string, required: false, label: false, input_html: { id: "date_start" } %>
       </div>
 
-      <%= f.button :submit, class: 'btn btn-primary' %>
-      <% end %>
 
+      <%= f.button :submit, 'Validez mon voyage', class: 'btn btn-primary' %>
+      <% end %>
+    </div>
   </div>
 </div>
 
