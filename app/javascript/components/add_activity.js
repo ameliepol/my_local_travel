@@ -6,7 +6,7 @@ const incrementedList = () => {
   const buttonAdd = document.querySelector('.btn-add')
   if (buttonAdd) {
     buttonAdd.addEventListener('click', (event) => {
-      const activityList = document.getElementById('day-one');
+      const activityList = document.getElementById('stock_zone');
       const titleActivity = document.querySelector('.mapboxgl-popup-content h1');
       activityList.insertAdjacentHTML("beforeend", `<div class='activity-list'>${titleActivity.innerText}</div>`)
       document.querySelector("#info-popup > .btn-quit").click();

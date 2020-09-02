@@ -362,9 +362,9 @@ activity_23.photos.attach([
 activity_23.save
 
 
-file70 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994525/actv8_3_rpxods.jpg')
-file71 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv8_1_jvecto.jpg')
-file72 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv8_2_djjq9d.jpg')
+file70 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599049512/actv24_1.jpg')
+file71 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599049901/actv24_2.jpg')
+file72 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051741/actv24_3.jpg')
 activity_24.photos.attach([
   {io: file70, filename: 'file70.jpg', content_type: 'image/png'},
   {io: file71, filename: 'file71.jpg', content_type: 'image/png'},
@@ -372,9 +372,9 @@ activity_24.photos.attach([
 ])
 activity_24.save
 
-file73 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997112/actv9_1_ukkurh.jpg')
-file74 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv9_2_ccizim.jpg')
-file75 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv9_3_xuzlhz.jpg')
+file73 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599049812/actv25_1.jpg')
+file74 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599049901/actv25_2.jpg')
+file75 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599052257/actv25_3.jpg')
 activity_25.photos.attach([
   {io: file73, filename: 'file73.jpg', content_type: 'image/png'},
   {io: file74, filename: 'file74.jpg', content_type: 'image/png'},
@@ -383,9 +383,9 @@ activity_25.photos.attach([
 activity_25.save
 
 
-file76 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv10_2_q275xd.jpg')
-file77 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997111/actv10_1_oor5dg.jpg')
-file78 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv10_3_aqml1s.jpg')
+file76 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599050011/actv26_1.jpg')
+# file77 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997111/actv10_1_oor5dg.jpg')
+# file78 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv10_3_aqml1s.jpg')
 activity_26.photos.attach([
   {io: file76, filename: 'file76.jpg', content_type: 'image/png'},
   {io: file77, filename: 'file77.jpg', content_type: 'image/png'},
@@ -393,9 +393,9 @@ activity_26.photos.attach([
 ])
 activity_26.save
 
-file79 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv11_3_spvfsw.jpg')
-file80 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv11_2_vuk7kq.jpg')
-file81 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598818685/guinguette_cdhmpv.jpg')
+file79 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599050236/actv27_1.jpg')
+file80 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599050750/actv28_2.jpg')
+# file81 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598818685/guinguette_cdhmpv.jpg')
 activity_27.photos.attach([
   {io: file79, filename: 'file79.jpg', content_type: 'image/png'},
   {io: file80, filename: 'file80.jpg', content_type: 'image/png'},
@@ -404,9 +404,9 @@ activity_27.photos.attach([
 activity_27.save
 
 
-file82 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997111/actv12_1_uhyxhi.jpg')
-file83 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv12_2_g3qxoe.jpg')
-file84 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997111/actv12_3_jovj25.jpg')
+file80 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599050750/actv28_1.jpg')
+file80 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599050750/actv28_2.jpg')
+# file84 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997111/actv12_3_jovj25.jpg')
 activity_28.photos.attach([
   {io: file82, filename: 'file82.jpg', content_type: 'image/png'},
   {io: file83, filename: 'file83.jpg', content_type: 'image/png'},
@@ -414,9 +414,9 @@ activity_28.photos.attach([
 ])
 activity_28.save
 
-file85 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598818685/cueillette_g51zmj.jpg')
-file86 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv13_1_ynpdya.jpg')
-file87 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv13_2_k9szgy.jpg')
+file85 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599050846/actv29_1.jpg')
+file86 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599050843/actv29_2.jpg')
+# file87 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv13_2_k9szgy.jpg')
 activity_29.photos.attach([
   {io: file85, filename: 'file85.jpg', content_type: 'image/png'},
   {io: file86, filename: 'file86.jpg', content_type: 'image/png'},
@@ -424,9 +424,9 @@ activity_29.photos.attach([
 ])
 activity_29.save
 
-file88 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv14_1_n1tck3.jpg')
-file89 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv14_2_vvzwbe.jpg')
-file90 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997112/actv14_3_q68y9m.jpg')
+file88 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599050961/actv30_1.jpg')
+file89 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599050966/actv30_2.jpg')
+file90 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599050973/actv30_3.jpg')
 activity_30.photos.attach([
   {io: file88, filename: 'file88.jpg', content_type: 'image/png'},
   {io: file89, filename: 'file89.jpg', content_type: 'image/png'},
@@ -434,9 +434,9 @@ activity_30.photos.attach([
 ])
 activity_30.save
 
-file91 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997111/actv15_1_y8ji2n.jpg')
-file92 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv15_2_jpcarb.jpg')
-file93 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv15_3_dnt8wn.jpg')
+file91 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051153/actv31_1.jpg')
+file92 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051166/actv31_2.jpg')
+# file93 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv15_3_dnt8wn.jpg')
 activity_31.photos.attach([
   {io: file91, filename: 'file91.jpg', content_type: 'image/png'},
   {io: file92, filename: 'file92.jpg', content_type: 'image/png'},
@@ -445,9 +445,9 @@ activity_31.photos.attach([
 activity_31.save
 
 
-file94 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv16_1_ruvy68.jpg')
-file95 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv16_3_yszcs0.jpg')
-file96 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv16_2_tz3hld.jpg')
+file94 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
+file95 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
+file96 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
 activity_32.photos.attach([
   {io: file94, filename: 'file94.jpg', content_type: 'image/png'},
   {io: file95, filename: 'file95.jpg', content_type: 'image/png'},

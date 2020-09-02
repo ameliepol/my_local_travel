@@ -28,24 +28,24 @@ import "bootstrap";
 
 // import '../components/search';
 import "../components/tag_search";
-import { initFlatpickr } from '../plugins/flatpickr';
+// import { initFlatpickr } from '../plugins/flatpickr';
 import { initSelect2 } from '../plugins/init_select2';
+import { initSortable } from '../plugins/init_sortable';
 // import '../components/search';
 // import { searchAddresses } from '../components/search';
-import { validerTrip } from '../components/valider_trip';
+// import { validerTrip } from '../components/valider_trip';
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
-
 document.addEventListener('turbolinks:load', () => {
-
- initFlatpickr();
+  // initFlatpickr();
   initSelect2();
+  initSortable();
   // Call your functions here, e.g:
   // initSelect2();
   // initMapbox();
-  validerTrip();
+  //validerTrip();
 
 
   // searchAddresses();
