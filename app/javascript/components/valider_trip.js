@@ -8,35 +8,39 @@ const validerTrip = () => {
       const dayThree = document.getElementById('day-three');
 
     // on crée un objet vide trip
-    let trip = []
+      let trip = [];
 
-      if (dayOne) {
+      // if (dayOne) {
         const dayOneList = dayOne.querySelectorAll('.activity-list');
         // on transforme dayOneList en une liste de strings
-        // on insère cette liste comme valeur de Trip poour la clé dayOne
-      }
-      if (dayTwo) {
-        const dayTwoList = dayTwo.querySelectorAll('.activity-list');
+        dayOneList.forEach((selectedActivity) => {
+        trip.push(selectedActivity.innerText);
+        });
+      // };
+      console.log(trip);
+        //on insère cette liste comme valeur de Trip poour la clé dayOne
 
-      }
+      // if (dayTwo) {
+      //   const dayTwoList = dayTwo.querySelectorAll('.activity-list');
 
-      if (dayThree) {
-        const dayThreeList = dayThree.querySelectorAll('.activity-list');
+      // }
 
-      }
+      // if (dayThree) {
+      //   const dayThreeList = dayThree.querySelectorAll('.activity-list');
+
+      // }
 
 
 
-      const selectedActivities = document.querySelectorAll('.activity-list');
-      let list = []
-      selectedActivities.forEach((selectedActivity) => {
-        list.push(selectedActivity.innerText);
-      });
-      console.log(list);
+      // const selectedActivities = document.querySelectorAll('.activity-list');
+      // let list = []
+      // selectedActivities.forEach((selectedActivity) => {
+      //   list.push(selectedActivity.innerText);
+      // });
+      // console.log(trip);
     });
-  }
-}
-
+  };
+};
 export { validerTrip };
 
 

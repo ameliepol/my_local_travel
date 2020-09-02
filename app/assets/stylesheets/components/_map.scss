@@ -10,14 +10,29 @@
   position: sticky;
   right: 0px;
   top: 0;
-}
+
+    h3 {
+    font-size: 16px;
+    font-family: Work Sans;
+    font-weight: bold;
+    padding-left: 4px;
+    padding-top: 4px;
+    }
+
+    p {
+      font-family: Work Sans;
+      padding: 0px;
+      margin: 0px;
+    }
+  }
 
 #legend {
   position: absolute;
+  font-family: Work Sans;
   text-align: left;
   z-index: 1;
-  height: 120px;
-  width: 123px;
+  height: 130px;
+  width: 135px;
   justify-content: right;
   background-color: white;
 }
@@ -53,6 +68,8 @@ font-weight: 500;
 
   }
 }
+
+
 
 .roadsheet {
   width: 40%;
