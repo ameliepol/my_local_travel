@@ -1,3 +1,7 @@
+.body {
+  background: white;
+}
+
 .search-container {
   display: flex;
   align-items: center;
@@ -10,7 +14,7 @@
   justify-content: space-between;
   background: $my-beige;
   font-family: "Rubik";
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 20px;
   border-radius: 5px;
   h2 {
