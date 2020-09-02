@@ -5,7 +5,7 @@
   <div class="roadsheet">
     <h1>Feuille de route</h1>
       <div id="stock_zone">
-        Zone de stockage
+        Activités
       </div>
       <% if @days_number ==  1 %>
         <div id="day_one">Jour 1</div>
@@ -18,11 +18,10 @@
         <div id="day_two">Jour 2</div>
         <div id="day_three">Jour 3</div>
       <% end %>
-
       <div class="btn-valid-trip" id="valider-trip" data-url="<%= trip_url(@trip.id) %>">Valider trip</div>
     </div>
   </div>
-  <div class="btn-primary" id="valider-trip">Valider trip</div>
+<!--   <div class="btn-primary" id="valider-trip">Valider trip</div> -->
 
   <div id="map"
     data-markers="<%= @markers.to_json %>"
