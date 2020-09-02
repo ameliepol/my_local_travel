@@ -23,22 +23,22 @@ puts "Users created!"
 
 puts "Creating activities..."
 
-# activity_1 = Activity.create!(name: "Camping des pins", fee: 49, localisation: "Fourton", mood: 3, category: 1, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-# activity_2 = Activity.create!(name: "Chalet de la rivière", fee: 79, localisation: "Néac", mood: 3, category: 1, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-# activity_3 = Activity.create!(name: "Cabane Spa Dolce Vita", fee: 80, localisation: "Cestas", mood: 3, category: 1, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-# activity_4 = Activity.create!(name: "Smart Green Corner", fee: 30, localisation: "Saint-Médard-en-Jalles", mood: 3, category: 2, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-# activity_5 = Activity.create!(name: "Domaine de la détente", fee: 30, localisation: "Lanton", mood: 3, category: 2, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-# activity_6 = Activity.create!(name: "Relais de Margaux", fee: 50, localisation: "Margaux", mood: 3, category: 2, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-# activity_7 = Activity.create!(name: "Hatha Yoga", fee: 25, localisation: "Canéjan", mood: 3, category: 3, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-# activity_8 = Activity.create!(name: "Pêche", fee: 25, localisation: "Hourtin", mood: 3, category: 3, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-# activity_9 = Activity.create!(name: "Spa éc(h)o", fee: 45, localisation: "Talence", mood: 3, category: 3, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-# activity_10 = Activity.create!(name: "Marché noctune", fee: 19, localisation: "Marcenais", mood: 3, category: 4, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-# activity_11 = Activity.create!(name: "Guinguette du phare", fee: 25, localisation: "Lestiac-sur-Garonne", mood: 3, category: 4, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-# activity_12 = Activity.create!(name: "Croisière nocturne", fee: 25, localisation: "Ile de Patiras", mood: 3, category: 4, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-# activity_13 = Activity.create!(name: "Cueillette de fleurs", fee: 25, localisation: "Saucats", mood: 3, category: 3, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-# activity_14 = Activity.create!(name: "Soirée sur la Dune", fee: 50, localisation: "Dune du pyla", mood: 3, category: 1, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-# activity_15 = Activity.create!(name: "Le cabanon", fee: 25, localisation: "Gujan-Mestras", mood: 3, category: 2, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-# activity_16 = Activity.create!(name: "Enjoy the waves", fee: 20, localisation: "La Teste de Buch", mood: 3, category: 3, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+activity_1 = Activity.create!(name: "Camping des pins", fee: 49, localisation: "Fourton", mood: 3, category: 1, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+activity_2 = Activity.create!(name: "Chalet de la rivière", fee: 79, localisation: "Néac", mood: 3, category: 1, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+activity_3 = Activity.create!(name: "Cabane Spa Dolce Vita", fee: 80, localisation: "Cestas", mood: 3, category: 1, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+activity_4 = Activity.create!(name: "Smart Green Corner", fee: 30, localisation: "Saint-Médard-en-Jalles", mood: 3, category: 2, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+activity_5 = Activity.create!(name: "Domaine de la détente", fee: 30, localisation: "Lanton", mood: 3, category: 2, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+activity_6 = Activity.create!(name: "Relais de Margaux", fee: 50, localisation: "Margaux", mood: 3, category: 2, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+activity_7 = Activity.create!(name: "Hatha Yoga", fee: 25, localisation: "Canéjan", mood: 3, category: 3, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+activity_8 = Activity.create!(name: "Pêche", fee: 25, localisation: "Hourtin", mood: 3, category: 3, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+activity_9 = Activity.create!(name: "Spa éc(h)o", fee: 45, localisation: "Talence", mood: 3, category: 3, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+activity_10 = Activity.create!(name: "Marché noctune", fee: 19, localisation: "Marcenais", mood: 3, category: 4, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+activity_11 = Activity.create!(name: "Guinguette du phare", fee: 25, localisation: "Lestiac-sur-Garonne", mood: 3, category: 4, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+activity_12 = Activity.create!(name: "Croisière nocturne", fee: 25, localisation: "Ile de Patiras", mood: 3, category: 4, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+activity_13 = Activity.create!(name: "Cueillette de fleurs", fee: 25, localisation: "Saucats", mood: 3, category: 3, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+activity_14 = Activity.create!(name: "Soirée sur la Dune", fee: 50, localisation: "Dune du pyla", mood: 3, category: 1, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+activity_15 = Activity.create!(name: "Le cabanon", fee: 25, localisation: "Gujan-Mestras", mood: 3, category: 2, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+activity_16 = Activity.create!(name: "Enjoy the waves", fee: 20, localisation: "La Teste de Buch", mood: 3, category: 3, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
 activity_17 = Activity.create!(name: "Peche sous les etoiles", fee: 25, localisation: "Pyla-sur-mer", mood: 3, category: 4, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
 activity_18 = Activity.create!(name: "Visite du Domaine", fee: 27,  localisation: "Targon", mood: 3, category: 3, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
 activity_19 = Activity.create!(name: "Balade à cheval au coucher du soleil", fee: 40, localisation: "Carcans", mood: 3, category: 4, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
@@ -119,178 +119,178 @@ activity_32 = Activity.create!(name: "Balade en canoë et observation des oiseau
 # activity_94 = Activity.create!(name: "Airotel Camping de la Côte d'Argent", fee: 49, localisation: "Hourtin", mood: 3, category: 1, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
 # activity_95 = Activity.create!(name: "Domaine Ecotelia", fee: 49, localisation: "Le Nizan", mood: 3, category: 1, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
 
-Trip.create!(start_date: Date.today, end_date: Date.today, user: User.first, address: "Bordeaux", radius: 12)
+Trip.create!(start_date: Date.today, end_date: Date.today, user: User.first, address: "Bordeaux", radius: 10, mood: 3, budget: 2)
 
-# file1 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992455/actv1_1_wptrsq.jpg')
-# file2 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992450/actv1_2_ateokk.jpg')
-# file3 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992444/actv1_3_duax9y.jpg')
-# activity_1.photos.attach([
-#   {io: file1, filename: 'file1.jpg', content_type: 'image/png'},
-#   {io: file2, filename: 'file2.jpg', content_type: 'image/png'},
-#   {io: file3, filename: 'file3.jpg', content_type: 'image/png'}
-# ])
-# activity_1.save
+file1 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992455/actv1_1_wptrsq.jpg')
+file2 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992450/actv1_2_ateokk.jpg')
+file3 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992444/actv1_3_duax9y.jpg')
+activity_1.photos.attach([
+  {io: file1, filename: 'file1.jpg', content_type: 'image/png'},
+  {io: file2, filename: 'file2.jpg', content_type: 'image/png'},
+  {io: file3, filename: 'file3.jpg', content_type: 'image/png'}
+])
+activity_1.save
 
-# file4 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992676/actv2_1_xw0d79.jpg')
-# file5 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992677/actv2_3_rzvuqt.jpg')
-# file6 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992677/actv2_2_ridh7v.jpg')
-# activity_2.photos.attach([
-#   {io: file4, filename: 'file4.jpg', content_type: 'image/png'},
-#   {io: file5, filename: 'file5.jpg', content_type: 'image/png'},
-#   {io: file6, filename: 'file6.jpg', content_type: 'image/png'}
-# ])
-# activity_2.save
+file4 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992676/actv2_1_xw0d79.jpg')
+file5 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992677/actv2_3_rzvuqt.jpg')
+file6 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992677/actv2_2_ridh7v.jpg')
+activity_2.photos.attach([
+  {io: file4, filename: 'file4.jpg', content_type: 'image/png'},
+  {io: file5, filename: 'file5.jpg', content_type: 'image/png'},
+  {io: file6, filename: 'file6.jpg', content_type: 'image/png'}
+])
+activity_2.save
 
-# file7 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598993286/actv3_3_tqinoc.jpg')
-# file8 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598993286/actv3_2_v6prcj.jpg')
-# file9 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598993286/actv3_1_gy4nvz.jpg')
-# activity_3.photos.attach([
-#   {io: file7, filename: 'file7.jpg', content_type: 'image/png'},
-#   {io: file8, filename: 'file8.jpg', content_type: 'image/png'},
-#   {io: file9, filename: 'file9.jpg', content_type: 'image/png'}
-# ])
-# activity_3.save
-
-
-# file10 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598993286/actv4_1_d3qgko.jpg')
-# file11 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598993286/actv4_2_hf734p.jpg')
-# file12 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598993286/actv4_3_tk6ma7.jpg')
-# activity_4.photos.attach([
-#   {io: file10, filename: 'file10.jpg', content_type: 'image/png'},
-#   {io: file11, filename: 'file11.jpg', content_type: 'image/png'},
-#   {io: file12, filename: 'file12.jpg', content_type: 'image/png'}
-# ])
-# activity_4.save
-
-# file13 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv5_1_r7ckia.jpg')
-# file14 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv5_2_xqz6ed.jpg')
-# file15 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv5_3_f6kaib.jpg')
-# activity_5.photos.attach([
-#   {io: file13, filename: 'file13.jpg', content_type: 'image/png'},
-#   {io: file14, filename: 'file14.jpg', content_type: 'image/png'},
-#   {io: file15, filename: 'file15.jpg', content_type: 'image/png'}
-# ])
-# activity_5.save
+file7 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598993286/actv3_3_tqinoc.jpg')
+file8 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598993286/actv3_2_v6prcj.jpg')
+file9 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598993286/actv3_1_gy4nvz.jpg')
+activity_3.photos.attach([
+  {io: file7, filename: 'file7.jpg', content_type: 'image/png'},
+  {io: file8, filename: 'file8.jpg', content_type: 'image/png'},
+  {io: file9, filename: 'file9.jpg', content_type: 'image/png'}
+])
+activity_3.save
 
 
-# fil16 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv6_1_dzqd0d.jpg')
-# file17 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv6_2_c4mub7.jpg')
-# file18 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994525/actv6_3_q7r5r4.jpg')
-# activity_6.photos.attach([
-#   {io: file16, filename: 'file16.jpg', content_type: 'image/png'},
-#   {io: file17, filename: 'file17.jpg', content_type: 'image/png'},
-#   {io: file18, filename: 'file18.jpg', content_type: 'image/png'}
-# ])
-# activity_6.save
+file10 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598993286/actv4_1_d3qgko.jpg')
+file11 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598993286/actv4_2_hf734p.jpg')
+file12 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598993286/actv4_3_tk6ma7.jpg')
+activity_4.photos.attach([
+  {io: file10, filename: 'file10.jpg', content_type: 'image/png'},
+  {io: file11, filename: 'file11.jpg', content_type: 'image/png'},
+  {io: file12, filename: 'file12.jpg', content_type: 'image/png'}
+])
+activity_4.save
 
-# file19 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv7_3_my7qum.jpg')
-# file20 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv7_2_rmgfmw.jpg')
-# file21 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994525/actv7_1_srhsks.jpg')
-# activity_7.photos.attach([
-#   {io: file19, filename: 'file19.jpg', content_type: 'image/png'},
-#   {io: file20, filename: 'file20.jpg', content_type: 'image/png'},
-#   {io: file21, filename: 'file21.jpg', content_type: 'image/png'}
-# ])
-# activity_7.save
-
-
-# file22 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994525/actv8_3_rpxods.jpg')
-# file23 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv8_1_jvecto.jpg')
-# file24 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv8_2_djjq9d.jpg')
-# activity_8.photos.attach([
-#   {io: file22, filename: 'file22.jpg', content_type: 'image/png'},
-#   {io: file23, filename: 'file23.jpg', content_type: 'image/png'},
-#   {io: file24, filename: 'file24.jpg', content_type: 'image/png'}
-# ])
-# activity_8.save
-
-# file25 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997112/actv9_1_ukkurh.jpg')
-# file26 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv9_2_ccizim.jpg')
-# file27 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv9_3_xuzlhz.jpg')
-# activity_9.photos.attach([
-#   {io: file25, filename: 'file25.jpg', content_type: 'image/png'},
-#   {io: file26, filename: 'file26.jpg', content_type: 'image/png'},
-#   {io: file27, filename: 'file27.jpg', content_type: 'image/png'}
-# ])
-# activity_9.save
+file13 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv5_1_r7ckia.jpg')
+file14 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv5_2_xqz6ed.jpg')
+file15 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv5_3_f6kaib.jpg')
+activity_5.photos.attach([
+  {io: file13, filename: 'file13.jpg', content_type: 'image/png'},
+  {io: file14, filename: 'file14.jpg', content_type: 'image/png'},
+  {io: file15, filename: 'file15.jpg', content_type: 'image/png'}
+])
+activity_5.save
 
 
-# file28 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv10_2_q275xd.jpg')
-# file29 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997111/actv10_1_oor5dg.jpg')
-# file30 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv10_3_aqml1s.jpg')
-# activity_10.photos.attach([
-#   {io: file28, filename: 'file28.jpg', content_type: 'image/png'},
-#   {io: file29, filename: 'file29.jpg', content_type: 'image/png'},
-#   {io: file30, filename: 'file30.jpg', content_type: 'image/png'}
-# ])
-# activity_10.save
+fil16 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv6_1_dzqd0d.jpg')
+file17 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv6_2_c4mub7.jpg')
+file18 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994525/actv6_3_q7r5r4.jpg')
+activity_6.photos.attach([
+  {io: file16, filename: 'file16.jpg', content_type: 'image/png'},
+  {io: file17, filename: 'file17.jpg', content_type: 'image/png'},
+  {io: file18, filename: 'file18.jpg', content_type: 'image/png'}
+])
+activity_6.save
 
-# file31 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv11_3_spvfsw.jpg')
-# file32 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv11_2_vuk7kq.jpg')
-# file33 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598818685/guinguette_cdhmpv.jpg')
-# activity_11.photos.attach([
-#   {io: file31, filename: 'file31.jpg', content_type: 'image/png'},
-#   {io: file32, filename: 'file32.jpg', content_type: 'image/png'},
-#   {io: file33, filename: 'file33.jpg', content_type: 'image/png'}
-# ])
-# activity_11.save
-
-
-# file34 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997111/actv12_1_uhyxhi.jpg')
-# file35 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv12_2_g3qxoe.jpg')
-# file36 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997111/actv12_3_jovj25.jpg')
-# activity_12.photos.attach([
-#   {io: file34, filename: 'file34.jpg', content_type: 'image/png'},
-#   {io: file35, filename: 'file35.jpg', content_type: 'image/png'},
-#   {io: file36, filename: 'file36.jpg', content_type: 'image/png'}
-# ])
-# activity_12.save
-
-# file37 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598818685/cueillette_g51zmj.jpg')
-# file38 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv13_1_ynpdya.jpg')
-# file39 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv13_2_k9szgy.jpg')
-# activity_13.photos.attach([
-#   {io: file37, filename: 'file37.jpg', content_type: 'image/png'},
-#   {io: file38, filename: 'file38.jpg', content_type: 'image/png'},
-#   {io: file39, filename: 'file39.jpg', content_type: 'image/png'}
-# ])
-# activity_13.save
+file19 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv7_3_my7qum.jpg')
+file20 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv7_2_rmgfmw.jpg')
+file21 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994525/actv7_1_srhsks.jpg')
+activity_7.photos.attach([
+  {io: file19, filename: 'file19.jpg', content_type: 'image/png'},
+  {io: file20, filename: 'file20.jpg', content_type: 'image/png'},
+  {io: file21, filename: 'file21.jpg', content_type: 'image/png'}
+])
+activity_7.save
 
 
-# file40 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv14_1_n1tck3.jpg')
-# file41 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv14_2_vvzwbe.jpg')
-# file42 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997112/actv14_3_q68y9m.jpg')
-# activity_14.photos.attach([
-#   {io: file40, filename: 'file40.jpg', content_type: 'image/png'},
-#   {io: file41, filename: 'file41.jpg', content_type: 'image/png'},
-#   {io: file42, filename: 'file42.jpg', content_type: 'image/png'}
-# ])
-# activity_14.save
+file22 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994525/actv8_3_rpxods.jpg')
+file23 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv8_1_jvecto.jpg')
+file24 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv8_2_djjq9d.jpg')
+activity_8.photos.attach([
+  {io: file22, filename: 'file22.jpg', content_type: 'image/png'},
+  {io: file23, filename: 'file23.jpg', content_type: 'image/png'},
+  {io: file24, filename: 'file24.jpg', content_type: 'image/png'}
+])
+activity_8.save
 
-# file43 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997111/actv15_1_y8ji2n.jpg')
-# file44 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv15_2_jpcarb.jpg')
-# file45 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv15_3_dnt8wn.jpg')
-# activity_15.photos.attach([
-#   {io: file43, filename: 'file43.jpg', content_type: 'image/png'},
-#   {io: file44, filename: 'file44.jpg', content_type: 'image/png'},
-#   {io: file45, filename: 'file45.jpg', content_type: 'image/png'}
-# ])
-# activity_15.save
+file25 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997112/actv9_1_ukkurh.jpg')
+file26 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv9_2_ccizim.jpg')
+file27 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv9_3_xuzlhz.jpg')
+activity_9.photos.attach([
+  {io: file25, filename: 'file25.jpg', content_type: 'image/png'},
+  {io: file26, filename: 'file26.jpg', content_type: 'image/png'},
+  {io: file27, filename: 'file27.jpg', content_type: 'image/png'}
+])
+activity_9.save
 
 
-# file46 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv16_1_ruvy68.jpg')
-# file47 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv16_3_yszcs0.jpg')
-# file48 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv16_2_tz3hld.jpg')
-# activity_16.photos.attach([
-#   {io: file46, filename: 'file46.jpg', content_type: 'image/png'},
-#   {io: file47, filename: 'file47.jpg', content_type: 'image/png'},
-#   {io: file48, filename: 'file48.jpg', content_type: 'image/png'}
-# ])
-# activity_16.save
+file28 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv10_2_q275xd.jpg')
+file29 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997111/actv10_1_oor5dg.jpg')
+file30 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv10_3_aqml1s.jpg')
+activity_10.photos.attach([
+  {io: file28, filename: 'file28.jpg', content_type: 'image/png'},
+  {io: file29, filename: 'file29.jpg', content_type: 'image/png'},
+  {io: file30, filename: 'file30.jpg', content_type: 'image/png'}
+])
+activity_10.save
 
-file49 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992455/actv1_1_wptrsq.jpg')
-file50 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992450/actv1_2_ateokk.jpg')
-file51 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992444/actv1_3_duax9y.jpg')
+file31 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv11_3_spvfsw.jpg')
+file32 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv11_2_vuk7kq.jpg')
+file33 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598818685/guinguette_cdhmpv.jpg')
+activity_11.photos.attach([
+  {io: file31, filename: 'file31.jpg', content_type: 'image/png'},
+  {io: file32, filename: 'file32.jpg', content_type: 'image/png'},
+  {io: file33, filename: 'file33.jpg', content_type: 'image/png'}
+])
+activity_11.save
+
+
+file34 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997111/actv12_1_uhyxhi.jpg')
+file35 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv12_2_g3qxoe.jpg')
+file36 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997111/actv12_3_jovj25.jpg')
+activity_12.photos.attach([
+  {io: file34, filename: 'file34.jpg', content_type: 'image/png'},
+  {io: file35, filename: 'file35.jpg', content_type: 'image/png'},
+  {io: file36, filename: 'file36.jpg', content_type: 'image/png'}
+])
+activity_12.save
+
+file37 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598818685/cueillette_g51zmj.jpg')
+file38 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv13_1_ynpdya.jpg')
+file39 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv13_2_k9szgy.jpg')
+activity_13.photos.attach([
+  {io: file37, filename: 'file37.jpg', content_type: 'image/png'},
+  {io: file38, filename: 'file38.jpg', content_type: 'image/png'},
+  {io: file39, filename: 'file39.jpg', content_type: 'image/png'}
+])
+activity_13.save
+
+
+file40 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv14_1_n1tck3.jpg')
+file41 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv14_2_vvzwbe.jpg')
+file42 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997112/actv14_3_q68y9m.jpg')
+activity_14.photos.attach([
+  {io: file40, filename: 'file40.jpg', content_type: 'image/png'},
+  {io: file41, filename: 'file41.jpg', content_type: 'image/png'},
+  {io: file42, filename: 'file42.jpg', content_type: 'image/png'}
+])
+activity_14.save
+
+file43 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997111/actv15_1_y8ji2n.jpg')
+file44 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv15_2_jpcarb.jpg')
+file45 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv15_3_dnt8wn.jpg')
+activity_15.photos.attach([
+  {io: file43, filename: 'file43.jpg', content_type: 'image/png'},
+  {io: file44, filename: 'file44.jpg', content_type: 'image/png'},
+  {io: file45, filename: 'file45.jpg', content_type: 'image/png'}
+])
+activity_15.save
+
+
+file46 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997109/actv16_1_ruvy68.jpg')
+file47 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv16_3_yszcs0.jpg')
+file48 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv16_2_tz3hld.jpg')
+activity_16.photos.attach([
+  {io: file46, filename: 'file46.jpg', content_type: 'image/png'},
+  {io: file47, filename: 'file47.jpg', content_type: 'image/png'},
+  {io: file48, filename: 'file48.jpg', content_type: 'image/png'}
+])
+activity_16.save
+
+file49 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053775/actv17_1_shqcbw.jpg')
+file50 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053775/actv17_2_nyi93i.jpg')
+file51 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053775/actv17_3_ikjrs0.jpg')
 activity_17.photos.attach([
   {io: file49, filename: 'file49.jpg', content_type: 'image/png'},
   {io: file50, filename: 'file50.jpg', content_type: 'image/png'},
@@ -299,9 +299,9 @@ activity_17.photos.attach([
 activity_17.save
 
 
-file52 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992676/actv2_1_xw0d79.jpg')
-file53 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992677/actv2_3_rzvuqt.jpg')
-file54 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992677/actv2_2_ridh7v.jpg')
+file52 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053775/actv18_1_zxyro8.jpg')
+file53 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053774/actv18_2_awojwm.jpg')
+file54 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053774/actv18_3_mbsuar.jpg')
 activity_18.photos.attach([
   {io: file52, filename: 'file52.jpg', content_type: 'image/png'},
   {io: file53, filename: 'file53.jpg', content_type: 'image/png'},
@@ -309,9 +309,9 @@ activity_18.photos.attach([
 ])
 activity_18.save
 
-file55 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598993286/actv3_3_tqinoc.jpg')
-file56 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598993286/actv3_2_v6prcj.jpg')
-file57 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598993286/actv3_1_gy4nvz.jpg')
+file55 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053775/actv19_3_upkuzm.jpg')
+file56 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053775/actv19_2_tsjfcb.jpg')
+file57 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053776/actv19_1_pydlv0.jpg')
 activity_19.photos.attach([
   {io: file55, filename: 'file55.jpg', content_type: 'image/png'},
   {io: file56, filename: 'file56.jpg', content_type: 'image/png'},
@@ -320,9 +320,9 @@ activity_19.photos.attach([
 activity_19.save
 
 
-file58 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598993286/actv4_1_d3qgko.jpg')
-file59 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598993286/actv4_2_hf734p.jpg')
-file60 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598993286/actv4_3_tk6ma7.jpg')
+file58 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053775/actv20_1_clgpyv.jpg')
+file59 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053774/actv20_2_wyw7qf.jpg')
+file60 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053775/actv20_3_vyuyul.jpg')
 activity_20.photos.attach([
   {io: file58, filename: 'file58.jpg', content_type: 'image/png'},
   {io: file59, filename: 'file59.jpg', content_type: 'image/png'},
@@ -330,9 +330,9 @@ activity_20.photos.attach([
 ])
 activity_20.save
 
-file61 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv5_1_r7ckia.jpg')
-file62 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv5_2_xqz6ed.jpg')
-file63 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv5_3_f6kaib.jpg')
+file61 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053776/actv21_1_by3h9f.jpg')
+file62 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053775/actv21_2_uorcnk.jpg')
+file63 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053775/actv21_3_uznfep.jpg')
 activity_21.photos.attach([
   {io: file61, filename: 'file61.jpg', content_type: 'image/png'},
   {io: file62, filename: 'file62.jpg', content_type: 'image/png'},
@@ -341,9 +341,9 @@ activity_21.photos.attach([
 activity_21.save
 
 
-file64 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv6_1_dzqd0d.jpg')
-file65 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv6_2_c4mub7.jpg')
-file66 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994525/actv6_3_q7r5r4.jpg')
+file64 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053775/actv22_1_njjtmu.jpg')
+file65 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053774/actv22_2_ojicba.jpg')
+file66 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053774/actv22_3_a7gkgv.jpg')
 activity_22.photos.attach([
   {io: file64, filename: 'file64.jpg', content_type: 'image/png'},
   {io: file65, filename: 'file65.jpg', content_type: 'image/png'},
@@ -351,9 +351,9 @@ activity_22.photos.attach([
 ])
 activity_22.save
 
-file67 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv7_3_my7qum.jpg')
-file68 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994524/actv7_2_rmgfmw.jpg')
-file69 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598994525/actv7_1_srhsks.jpg')
+file67 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053784/actv23_1_dyvgzv.jpg')
+file68 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053776/actv23_2_jr7vza.jpg')
+file69 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599053775/actv23_3_htqj38.jpg')
 activity_23.photos.attach([
   {io: file67, filename: 'file67.jpg', content_type: 'image/png'},
   {io: file68, filename: 'file68.jpg', content_type: 'image/png'},

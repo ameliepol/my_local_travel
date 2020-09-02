@@ -16,6 +16,10 @@ class TripsController < ApplicationController
   end
 
   def show
+    @trip = Trip.find(params[:id])
+    @trip.update(
+      day_one:
+      )
 
   end
 
@@ -25,6 +29,7 @@ class TripsController < ApplicationController
 
   def edit
     @trip = Trip.find(params[:id])
+
     @days_number = @trip.days.count
 
     @activities = Activity.with_attached_photos.where(mood: @trip.mood, budget: @trip.budget).geocoded
@@ -49,6 +54,8 @@ class TripsController < ApplicationController
   end
 
   def update
+    @trip = Trip.find(params[:id])
+    redirect_to trip_path(@trip)
   end
 
   private
