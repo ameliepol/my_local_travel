@@ -49,7 +49,7 @@
 
       <div class="col-12">
        <h2>D'où partez vous?</h2>
-       <%= f.input :address, collection: Search.addresses, input_html: { class: 'select2' } %>
+       <%= f.input :address, label: false, collection: Search.addresses, input_html: { class: 'select2' } %>
        <ul id="list-address">
        </ul>
      </div>
