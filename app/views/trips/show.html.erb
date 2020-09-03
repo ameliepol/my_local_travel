@@ -1,12 +1,31 @@
 <%= render 'shared/navbar' %>
+<div class="main-container">
+  <div class="container-map">
+      <div class="roadsheet">
+        <h2>Feuille de route</h2>
+          <!--<div id="stock_zone">
+            Sélectionnez vos activités et déplacez-les dans la feuille de route :
+          </div>-->
+          <% if @days_number ==  1 %>
+            <div id="day_one1">Jour 1</div>
 
+          <% elsif @days_number == 2 %>
+            <div id="day_one">Jour 1</div>
+            <div id="day_two">Jour 2</div>
+          <% else @days_number == 3 %>
+            <div id="day_one">Jour 1</div>
+            <div id="day_two">Jour 2</div>
+            <div id="day_three">Jour 3</div>
+          <% end %>
+          <!--<div class="btn-valid-trip" id="valider-trip" data-url="<%= trip_url(@trip.id) %>">Valider trip</div>-->
+      </div>
 
- <div id="map"
-  class="show-trip"
-  data-markers="<%= @markers.to_json %>"
-  data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
-  data-coords="<%= @coords.join(';') %>"
-  >
+  <div id="map"
+    class="show-trip"
+    data-markers="<%= @markers.to_json %>"
+    data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+    data-coords="<%= @coords.join(';') %>"
+    >
     <div class="legend">
       <p> <%= image_tag "picto_hebergement.png", width: 25 %> Hébergement
           <%= image_tag "picto_alimentation.png", width: 25 %> Alimentation
@@ -18,10 +37,11 @@
       <div class="btn-quit">x</div>
       <div class="infos"></div>
     </div>
+  </div>
 </div>
 
-
-<%= yield :page_scripts %>
-<% content_for :head do %>
-  <%= javascript_pack_tag "mapbox", 'data-turbolinks-track': 'reload', defer: true  %>
-<% end %>
+  <%= yield :page_scripts %>
+  <% content_for :head do %>
+    <%= javascript_pack_tag "mapbox", 'data-turbolinks-track': 'reload', defer: true  %>
+  <% end %>
+</div>

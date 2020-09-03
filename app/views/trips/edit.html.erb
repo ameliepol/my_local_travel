@@ -1,6 +1,5 @@
-
 <%= render 'shared/navbar' %>
-
+<div class="main-container">
 <div class="container-map">
   <div class="roadsheet">
     <h2>Feuille de route</h2>
@@ -50,10 +49,10 @@
       <div class="infos"></div>
     </div>
   </div>
+
+  <%= yield :page_scripts %>
+  <% content_for :head do %>
+    <%= javascript_pack_tag "mapbox", 'data-turbolinks-track': 'reload', defer: true  %>
+  <% end %>
+
 </div>
-
-<%= yield :page_scripts %>
-<% content_for :head do %>
-  <%= javascript_pack_tag "mapbox", 'data-turbolinks-track': 'reload', defer: true  %>
-<% end %>
-
