@@ -1,42 +1,52 @@
 <%= render 'shared/navbar' %>
 <div class="main-container">
-  <div class="container-map">
-    <div class="roadsheet">
-      <h2>Feuille de route</h2>
-        <div id="stock_zone">
-          Sélectionnez vos activités et déplacez-les dans la feuille de route :
+<div class="container-map">
+  <div class="roadsheet">
+    <h2>Feuille de route</h2>
+      <div id="day_0">
+        Sélectionnez vos activités et déplacez-les dans la feuille de route :
+      </div>
+      <div>
+        <% @trip.days.each do |day| %>
+        <h3> <%= day %></h3>
+        <div id="day_<%= day.position %>">
+          <% day.selected_activities.each do |selected_activity| %>
+            <div class='activity-list'><%= selected_activity.activity.name %></div>
+          <% end %>
         </div>
-        <% if @days_number ==  1 %>
-          <div id="day_one">Jour 1</div>
-
-        <% elsif @days_number == 2 %>
-          <div id="day_one">Jour 1</div>
-          <div id="day_two">Jour 2</div>
-        <% else @days_number == 3 %>
-          <div id="day_one">Jour 1</div>
-          <div id="day_two">Jour 2</div>
-          <div id="day_three">Jour 3</div>
         <% end %>
-        <div class="btn-valid-trip" id="valider-trip" data-url="<%= trip_url(@trip.id) %>">Valider trip</div>
+      </div>
+      <div class="btn-valid-trip" id="valider-trip" data-url="<%= trip_url(@trip.id) %>">Valider trip</div>
     </div>
 
-    <div id="map"
-      data-markers="<%= @markers.to_json %>"
-      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+  <div>
+   <% @trip.days.each do |day| %>
+    <% day.selected_activities.each do |selected_activity| %>
+      <%= selected_activity.activity.name %>
+      <%= simple_form_for selected_activity do |f| %>
+        <%= f.input :day_id, collection: @trip.days %>
+        <%= f.submit %>
+      <% end %>
+    <% end %>
+    <hr>
+  <% end %>
 
-      <!-- <div class="legend-ctnr"> -->
-        <div id="legend">
-        <h4><%= image_tag "picto_hebergement.png", width: 25 %> Hébergement</h4>
-        <h4><%= image_tag "picto_alimentation.png", width: 25 %> Alimentation</h4>
-        <h4><%= image_tag "picto_diurne.png", width: 25 %> Sortie en journée</h4>
-        <h4><%= image_tag "picto_nocturne.png", width: 25 %> Sortie en soirée</h4>
-        </div>
-      <!-- </div> -->
+  </div>
 
-      <div id="info-popup" class="d-none">
-        <div class="btn-quit">x</div>
-        <div class="infos"></div>
+  <div id="map"
+    data-markers="<%= @markers.to_json %>"
+    data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+
+      <div id="legend">
+      <h4><%= image_tag "picto_hebergement.png", width: 25 %> Hébergement</h4>
+      <h4><%= image_tag "picto_alimentation.png", width: 25 %> Alimentation</h4>
+      <h4><%= image_tag "picto_diurne.png", width: 25 %> Sortie en journée</h4>
+      <h4><%= image_tag "picto_nocturne.png", width: 25 %> Sortie en soirée</h4>
       </div>
+
+    <div id="info-popup" class="d-none">
+      <div class="btn-quit">x</div>
+      <div class="infos"></div>
     </div>
   </div>
 
