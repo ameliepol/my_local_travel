@@ -7,7 +7,7 @@ const incrementedList = () => {
   if (buttonAdd) {
     buttonAdd.addEventListener('click', (event) => {
       const activityList = document.getElementById('stock_zone');
-      const titleActivity = document.querySelector('.mapboxgl-popup-content h1');
+      const titleActivity = document.querySelector('.mapboxgl-popup-content h2');
       activityList.insertAdjacentHTML("beforeend", `<div class='activity-list'>${titleActivity.innerText}</div>`)
       document.querySelector("#info-popup > .btn-quit").click();
     });

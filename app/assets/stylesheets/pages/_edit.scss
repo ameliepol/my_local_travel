@@ -1,5 +1,61 @@
+h2 {
+  font-family: Rubik;
+  text-align: center;
+  color: #6d886d;
+}
+
+#stock_zone {
+  text-align: center;
+}
+
+.activity-list {
+  border: 1px solid #6d886d;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  cursor: grab;
+}
+
 .selected {
-  background-color: #6d886d !important;
+  border-color: #aedaa6;
+  background-color: #aedaa6 !important;
   z-index: 1 !important;
+
+  &:hover {
+    cursor: grab;
+  }
+}
+
+#day_one {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+
+  &:hover {
+    cursor: grab;
+  }
+}
+
+#day_two {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+
+  &:hover {
+    cursor: grab;
+  }
+}
+
+#day_three {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+
+  &:hover {
+    cursor: grab;
+  }
 }
 
