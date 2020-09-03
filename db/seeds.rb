@@ -23,8 +23,8 @@ puts "Users created!"
 
 puts "Creating activities..."
 
-# activity_1 = Activity.create!(name: "Camping des pins", fee: 49, localisation: "Fourton", mood: 2, category: 1, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
-# activity_2 = Activity.create!(name: "Chalet de la rivière", fee: 79, localisation: "Néac", mood: 2, category: 1, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
+activity_1 = Activity.create!(name: "Camping des pins", fee: 49, localisation: "Fourton", mood: 2, category: 1, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
+activity_2 = Activity.create!(name: "Chalet de la rivière", fee: 79, localisation: "Néac", mood: 2, category: 1, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
 # activity_3 = Activity.create!(name: "Cabane Spa Dolce Vita", fee: 80, localisation: "Cestas", mood: 2, category: 1, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
 # activity_4 = Activity.create!(name: "Smart Green Corner", fee: 30, localisation: "Saint-Médard-en-Jalles", mood: 2, category: 2, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
 # activity_5 = Activity.create!(name: "Domaine de la détente", fee: 30, localisation: "Lanton", mood: 2, category: 2, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
@@ -49,41 +49,41 @@ puts "Creating activities..."
 # activity_24 = Activity.create!(name: "Initiation à la biodynamie et dégustation", fee: 30, localisation: "Saint-Emilion",  mood: 2, category: 3, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
 # activity_25 = Activity.create!(name: "Camping du Lac", fee: 40, localisation: "Hourtin", mood: 2, category: 1, photo_url: "",  budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
 # activity_26 = Activity.create!(name: "Balade en canoë et observation des oiseaux", fee: 20,  localisation: "Cadillac", mood: 2, category: 3, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
-activity_27 = Activity.create!(name: "Maison tout confort et calme", fee: 60, localisation: "Podensac", mood: 2, category: 1, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
-activity_28 = Activity.create!(name: "Maison du bonheur", fee: 79, localisation: "Clérac", mood: 2, category: 1, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
-activity_29 = Activity.create!(name: "Descente de la Leyre en canoë", fee: 15, localisation: "Mios", mood: 2, category: 3, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
-activity_30 = Activity.create!(name: "Location de rosalies", fee: 25, localisation: "Hourtin", mood: 2, category: 3, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
-activity_31 = Activity.create!(name: "Terres d'Oiseaux", fee: 25, localisation: "Braud-et-Saint-Louis", mood: 2, category: 3, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
-activity_32 = Activity.create!(name: "Atelier Céramique", fee: 25, localisation: "Blagon", mood: 2, category: 3, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
-activity_33 = Activity.create!(name: "Ferme Saint-Henri", fee: 25, localisation: "Gujan-Mestras", mood: 2, category: 3, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
-activity_34 = Activity.create!(name: "Domaine d'Écoline : ferme et cueillette de fruits", fee: 25, localisation: "Sadirac", mood: 2, category: 3, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
-activity_35 = Activity.create!(name: "Réserve Ornithologique du Teich", fee: 25, localisation: "Le Teich", mood: 2, category: 3, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
-activity_36 = Activity.create!(name: "Au paradis du papillon", fee: 25, localisation: "Biganos", mood: 2, category: 3, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
-activity_37 = Activity.create!(name: "Les Ecogîtes Floréale", fee: 49, localisation: "Audenge", mood: 2, category: 1, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
-activity_38 = Activity.create!(name: "Camping Le Paradis", fee: 49, localisation: "Saint-Laurent-Médoc", mood: 2, category: 1, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
-activity_39 = Activity.create!(name: "Gîte La Maison dans les Vignes", fee: 49, localisation: "Riocaud", mood: 2, category: 1, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
+# activity_27 = Activity.create!(name: "Maison tout confort et calme", fee: 60, localisation: "Podensac", mood: 2, category: 1, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
+# activity_28 = Activity.create!(name: "Maison du bonheur", fee: 79, localisation: "Clérac", mood: 2, category: 1, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
+# activity_29 = Activity.create!(name: "Descente de la Leyre en canoë", fee: 15, localisation: "Mios", mood: 2, category: 3, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
+# activity_30 = Activity.create!(name: "Location de rosalies", fee: 25, localisation: "Hourtin", mood: 2, category: 3, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
+# activity_31 = Activity.create!(name: "Terres d'Oiseaux", fee: 25, localisation: "Braud-et-Saint-Louis", mood: 2, category: 3, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
+# activity_32 = Activity.create!(name: "Atelier Céramique", fee: 25, localisation: "Blagon", mood: 2, category: 3, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
+# activity_33 = Activity.create!(name: "Ferme Saint-Henri", fee: 25, localisation: "Gujan-Mestras", mood: 2, category: 3, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
+# activity_34 = Activity.create!(name: "Domaine d'Écoline : ferme et cueillette de fruits", fee: 25, localisation: "Sadirac", mood: 2, category: 3, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
+# activity_35 = Activity.create!(name: "Réserve Ornithologique du Teich", fee: 25, localisation: "Le Teich", mood: 2, category: 3, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
+# activity_36 = Activity.create!(name: "Au paradis du papillon", fee: 25, localisation: "Biganos", mood: 2, category: 3, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
+# activity_37 = Activity.create!(name: "Les Ecogîtes Floréale", fee: 49, localisation: "Audenge", mood: 2, category: 1, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
+# activity_38 = Activity.create!(name: "Camping Le Paradis", fee: 49, localisation: "Saint-Laurent-Médoc", mood: 2, category: 1, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
+# activity_39 = Activity.create!(name: "Gîte La Maison dans les Vignes", fee: 49, localisation: "Riocaud", mood: 2, category: 1, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
 
 Trip.create!(start_date: Date.today, end_date: Date.today, user: User.first, address: "Bordeaux", radius: 10, mood: 3, budget: 2)
 
-# file1 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992455/actv1_1_wptrsq.jpg')
-# file2 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992450/actv1_2_ateokk.jpg')
-# file3 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992444/actv1_3_duax9y.jpg')
-# activity_1.photos.attach([
-#   {io: file1, filename: 'file1.jpg', content_type: 'image/png'},
-#   {io: file2, filename: 'file2.jpg', content_type: 'image/png'},
-#   {io: file3, filename: 'file3.jpg', content_type: 'image/png'}
-# ])
-# activity_1.save
+file1 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992455/actv1_1_wptrsq.jpg')
+file2 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992450/actv1_2_ateokk.jpg')
+file3 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992444/actv1_3_duax9y.jpg')
+activity_1.photos.attach([
+  {io: file1, filename: 'file1.jpg', content_type: 'image/png'},
+  {io: file2, filename: 'file2.jpg', content_type: 'image/png'},
+  {io: file3, filename: 'file3.jpg', content_type: 'image/png'}
+])
+activity_1.save
 
-# file4 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992676/actv2_1_xw0d79.jpg')
-# file5 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992677/actv2_3_rzvuqt.jpg')
-# file6 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992677/actv2_2_ridh7v.jpg')
-# activity_2.photos.attach([
-#   {io: file4, filename: 'file4.jpg', content_type: 'image/png'},
-#   {io: file5, filename: 'file5.jpg', content_type: 'image/png'},
-#   {io: file6, filename: 'file6.jpg', content_type: 'image/png'}
-# ])
-# activity_2.save
+file4 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992676/actv2_1_xw0d79.jpg')
+file5 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992677/actv2_3_rzvuqt.jpg')
+file6 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598992677/actv2_2_ridh7v.jpg')
+activity_2.photos.attach([
+  {io: file4, filename: 'file4.jpg', content_type: 'image/png'},
+  {io: file5, filename: 'file5.jpg', content_type: 'image/png'},
+  {io: file6, filename: 'file6.jpg', content_type: 'image/png'}
+])
+activity_2.save
 
 # file7 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598993286/actv3_3_tqinoc.jpg')
 # file8 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598993286/actv3_2_v6prcj.jpg')
@@ -325,134 +325,134 @@ Trip.create!(start_date: Date.today, end_date: Date.today, user: User.first, add
 # ])
 # activity_26.save
 
-file97 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
-file98 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
-file99 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
-activity_27.photos.attach([
-  {io: file97, filename: 'file97.jpg', content_type: 'image/png'},
-  {io: file98, filename: 'file98.jpg', content_type: 'image/png'},
-  {io: file99, filename: 'file99.jpg', content_type: 'image/png'}
-])
-activity_27.save
+# file97 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
+# file98 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
+# file99 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
+# activity_27.photos.attach([
+#   {io: file97, filename: 'file97.jpg', content_type: 'image/png'},
+#   {io: file98, filename: 'file98.jpg', content_type: 'image/png'},
+#   {io: file99, filename: 'file99.jpg', content_type: 'image/png'}
+# ])
+# activity_27.save
 
-file100 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
-file101 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
-file102 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
-activity_28.photos.attach([
-  {io: file100, filename: 'file100.jpg', content_type: 'image/png'},
-  {io: file101, filename: 'file101.jpg', content_type: 'image/png'},
-  {io: file102, filename: 'file102.jpg', content_type: 'image/png'}
-])
-activity_28.save
+# file100 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
+# file101 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
+# file102 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
+# activity_28.photos.attach([
+#   {io: file100, filename: 'file100.jpg', content_type: 'image/png'},
+#   {io: file101, filename: 'file101.jpg', content_type: 'image/png'},
+#   {io: file102, filename: 'file102.jpg', content_type: 'image/png'}
+# ])
+# activity_28.save
 
-file103 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
-file104 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
-file105 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
-activity_29.photos.attach([
-  {io: file103, filename: 'file103.jpg', content_type: 'image/png'},
-  {io: file104, filename: 'file104.jpg', content_type: 'image/png'},
-  {io: file105, filename: 'file105.jpg', content_type: 'image/png'}
-])
-activity_29.save
+# file103 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
+# file104 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
+# file105 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
+# activity_29.photos.attach([
+#   {io: file103, filename: 'file103.jpg', content_type: 'image/png'},
+#   {io: file104, filename: 'file104.jpg', content_type: 'image/png'},
+#   {io: file105, filename: 'file105.jpg', content_type: 'image/png'}
+# ])
+# activity_29.save
 
-file106 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
-file107 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
-file108 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
-activity_30.photos.attach([
-  {io: file106, filename: 'file106.jpg', content_type: 'image/png'},
-  {io: file107, filename: 'file107.jpg', content_type: 'image/png'},
-  {io: file108, filename: 'file108.jpg', content_type: 'image/png'}
-])
-activity_30.save
+# file106 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
+# file107 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
+# file108 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
+# activity_30.photos.attach([
+#   {io: file106, filename: 'file106.jpg', content_type: 'image/png'},
+#   {io: file107, filename: 'file107.jpg', content_type: 'image/png'},
+#   {io: file108, filename: 'file108.jpg', content_type: 'image/png'}
+# ])
+# activity_30.save
 
-file109 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
-file110 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
-file111 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
-activity_31.photos.attach([
-  {io: file109, filename: 'file109.jpg', content_type: 'image/png'},
-  {io: file110, filename: 'file110.jpg', content_type: 'image/png'},
-  {io: file111, filename: 'file111.jpg', content_type: 'image/png'}
-])
-activity_31.save
+# file109 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
+# file110 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
+# file111 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
+# activity_31.photos.attach([
+#   {io: file109, filename: 'file109.jpg', content_type: 'image/png'},
+#   {io: file110, filename: 'file110.jpg', content_type: 'image/png'},
+#   {io: file111, filename: 'file111.jpg', content_type: 'image/png'}
+# ])
+# activity_31.save
 
-file112 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
-file113 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
-file114 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
-activity_32.photos.attach([
-  {io: file112, filename: 'file112.jpg', content_type: 'image/png'},
-  {io: file113, filename: 'file113.jpg', content_type: 'image/png'},
-  {io: file114, filename: 'file114.jpg', content_type: 'image/png'}
-])
-activity_32.save
+# file112 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
+# file113 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
+# file114 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
+# activity_32.photos.attach([
+#   {io: file112, filename: 'file112.jpg', content_type: 'image/png'},
+#   {io: file113, filename: 'file113.jpg', content_type: 'image/png'},
+#   {io: file114, filename: 'file114.jpg', content_type: 'image/png'}
+# ])
+# activity_32.save
 
-file118 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
-file119 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
-file120 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
-activity_33.photos.attach([
-  {io: file118, filename: 'file118.jpg', content_type: 'image/png'},
-  {io: file119, filename: 'file119.jpg', content_type: 'image/png'},
-  {io: file120, filename: 'file120.jpg', content_type: 'image/png'}
-])
-activity_33.save
+# file118 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
+# file119 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
+# file120 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
+# activity_33.photos.attach([
+#   {io: file118, filename: 'file118.jpg', content_type: 'image/png'},
+#   {io: file119, filename: 'file119.jpg', content_type: 'image/png'},
+#   {io: file120, filename: 'file120.jpg', content_type: 'image/png'}
+# ])
+# activity_33.save
 
-file121 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
-file122 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
-file123 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
-activity_34.photos.attach([
-  {io: file121, filename: 'file121.jpg', content_type: 'image/png'},
-  {io: file122, filename: 'file122jpg', content_type: 'image/png'},
-  {io: file123, filename: 'file123.jpg', content_type: 'image/png'}
-])
-activity_34.save
+# file121 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
+# file122 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
+# file123 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
+# activity_34.photos.attach([
+#   {io: file121, filename: 'file121.jpg', content_type: 'image/png'},
+#   {io: file122, filename: 'file122jpg', content_type: 'image/png'},
+#   {io: file123, filename: 'file123.jpg', content_type: 'image/png'}
+# ])
+# activity_34.save
 
-file124 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
-file125 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
-file126 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
-activity_35.photos.attach([
-  {io: file124, filename: 'file124.jpg', content_type: 'image/png'},
-  {io: file125, filename: 'file125.jpg', content_type: 'image/png'},
-  {io: file126, filename: 'file126.jpg', content_type: 'image/png'}
-])
-activity_35.save
+# file124 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
+# file125 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
+# file126 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
+# activity_35.photos.attach([
+#   {io: file124, filename: 'file124.jpg', content_type: 'image/png'},
+#   {io: file125, filename: 'file125.jpg', content_type: 'image/png'},
+#   {io: file126, filename: 'file126.jpg', content_type: 'image/png'}
+# ])
+# activity_35.save
 
-file127 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
-file128 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
-file129 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
-activity_36.photos.attach([
-  {io: file127, filename: 'file127.jpg', content_type: 'image/png'},
-  {io: file128, filename: 'file128.jpg', content_type: 'image/png'},
-  {io: file129, filename: 'file129.jpg', content_type: 'image/png'}
-])
-activity_36.save
+# file127 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
+# file128 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
+# file129 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
+# activity_36.photos.attach([
+#   {io: file127, filename: 'file127.jpg', content_type: 'image/png'},
+#   {io: file128, filename: 'file128.jpg', content_type: 'image/png'},
+#   {io: file129, filename: 'file129.jpg', content_type: 'image/png'}
+# ])
+# activity_36.save
 
-file130 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
-file131 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
-file132 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
-activity_37.photos.attach([
-  {io: file130, filename: 'file130.jpg', content_type: 'image/png'},
-  {io: file131, filename: 'file131.jpg', content_type: 'image/png'},
-  {io: file132, filename: 'file132.jpg', content_type: 'image/png'}
-])
-activity_37.save
+# file130 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
+# file131 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
+# file132 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
+# activity_37.photos.attach([
+#   {io: file130, filename: 'file130.jpg', content_type: 'image/png'},
+#   {io: file131, filename: 'file131.jpg', content_type: 'image/png'},
+#   {io: file132, filename: 'file132.jpg', content_type: 'image/png'}
+# ])
+# activity_37.save
 
-file136 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
-file137 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
-file138 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
-activity_38.photos.attach([
-  {io: file136, filename: 'file136.jpg', content_type: 'image/png'},
-  {io: file137, filename: 'file137.jpg', content_type: 'image/png'},
-  {io: file138, filename: 'file138.jpg', content_type: 'image/png'}
-])
-activity_38.save
+# file136 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
+# file137 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
+# file138 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
+# activity_38.photos.attach([
+#   {io: file136, filename: 'file136.jpg', content_type: 'image/png'},
+#   {io: file137, filename: 'file137.jpg', content_type: 'image/png'},
+#   {io: file138, filename: 'file138.jpg', content_type: 'image/png'}
+# ])
+# activity_38.save
 
-file139 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
-file140 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
-file141 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
-activity_39.photos.attach([
-  {io: file139, filename: 'file139.jpg', content_type: 'image/png'},
-  {io: file140, filename: 'file140.jpg', content_type: 'image/png'},
-  {io: file141, filename: 'file141.jpg', content_type: 'image/png'}
-])
-activity_39.save
+# file139 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
+# file140 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')
+# file141 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051285/actv32_3.jpg')
+# activity_39.photos.attach([
+#   {io: file139, filename: 'file139.jpg', content_type: 'image/png'},
+#   {io: file140, filename: 'file140.jpg', content_type: 'image/png'},
+#   {io: file141, filename: 'file141.jpg', content_type: 'image/png'}
+# ])
+# activity_39.save
 
 puts "Activities created!"
