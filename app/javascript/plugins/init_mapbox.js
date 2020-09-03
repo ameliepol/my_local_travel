@@ -61,9 +61,7 @@ function getMatch(map) {
   // [-122.6876056191411, 45.52510161231288]]
   var coords = mapElement.dataset.coords
 
-  var e = coords
-
-  var url = 'https://api.mapbox.com/directions/v5/mapbox/cycling/' + e +'?geometries=geojson&steps=true&&access_token=' + mapboxgl.accessToken;
+  var url = 'https://api.mapbox.com/directions/v5/mapbox/driving/' + coords +'?geometries=geojson&steps=true&overview=full&&access_token=' + mapboxgl.accessToken;
   console.log(url)
   var req = new XMLHttpRequest();
   req.responseType = 'json';
@@ -87,6 +85,7 @@ function addRoute (map, coords) {
     map.removeLayer('route')
     map.removeSource('route')
   } else{
+    console.log("helloWorld")
     map.addLayer({
       "id": "route",
       "type": "line",
@@ -118,6 +117,7 @@ console.log('hello');
 const initMapbox = () => {
   if (mapElement) {
     const map = buildMap();
+    console.log(map)
     const markers = JSON.parse(mapElement.dataset.markers);
     addMarkersToMap(map, markers);
     fitMapToMarkers(map, markers);
