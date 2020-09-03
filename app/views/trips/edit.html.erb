@@ -4,13 +4,25 @@
   <div class="roadsheet">
     <h2>Feuille de route</h2>
       <div id="day_0">
+        <% @trip.selected_activities.where(pending: true).each do |selected_activity| %>
+          <div class='activity-list'>
+              <%= selected_activity.activity.name %>
+                <%= simple_form_for selected_activity do |f| %>
+                <div class="d-none">
+                  <%= f.input :day_id, collection: @trip.days %>
+                </div>
+                <%= f.submit "", class: "btn-update-selected-activity" %>
+                <% end %>
+            </div>
+        <% end %>
+
         Sélectionnez vos activités et déplacez-les dans la feuille de route :
       </div>
       <div>
         <% @trip.days.each do |day| %>
         <h3> <%= day %></h3>
         <div id="day_<%= day.position %>" data-day-id="<%= day.id %>">
-          <% day.selected_activities.each do |selected_activity| %>
+          <% day.selected_activities.where(pending: false).each do |selected_activity| %>
             <div class='activity-list'>
               <%= selected_activity.activity.name %>
                 <%= simple_form_for selected_activity do |f| %>
@@ -46,10 +58,10 @@
     </div>
   </div>
 
-  <%= yield :page_scripts %>
-  <% content_for :head do %>
-    <%= javascript_pack_tag "mapbox", 'data-turbolinks-track': 'reload', defer: true  %>
-  <% end %>
+  <%#= yield :page_scripts %>
+  <%# content_for :head do %>
+    <%#= javascript_pack_tag "mapbox", 'data-turbolinks-track': 'reload', defer: true  %>
+  <%# end %>
 
 </div>
 </div>

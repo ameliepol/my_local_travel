@@ -8,10 +8,16 @@ const incrementedList = () => {
     buttonAdd.addEventListener('click', (event) => {
       const activityList = document.getElementById('day_0');
       const titleActivity = document.querySelector('.mapboxgl-popup-content h2');
-      activityList.insertAdjacentHTML("beforeend", `<div class='activity-list'>${titleActivity.innerText}</div>`)
+      activityList.insertAdjacentHTML("beforeend",
+        `<div class='activity-list'>
+          ${titleActivity.innerText}
+        </div>
+      `)
       document.querySelector("#info-popup > .btn-quit").click();
     });
   }
 }
 
 export { incrementedList };
+
+
