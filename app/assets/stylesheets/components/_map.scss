@@ -3,74 +3,35 @@
 }
 
 #map {
-  position: relative;
   justify-content: right;
   height: 100vh;
   width:60%;
   position: sticky;
   right: 0px;
   top: 0;
-
-    h4 {
-      background-color: white;
-      font-family: Work Sans;
-      font-size: 12px;
-      padding: 0px;
-      margin: 0px;
-    }
   }
-
-  .legend-ctnr {
-  // position: absolute;
-  // z-index: 1;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-top: 590px;
-  padding-left: 710px;
-}
 
 #legend {
   position: absolute;
-  font-family: Work Sans;
+  font-family: Rubik;
   text-align: left;
   z-index: 1;
-  height: 130px;
-  width: 135px;
+  height: 170px;
+  width: 160px;
+  margin: 10px auto;
   justify-content: right;
-}
-
-.mapboxgl-popup {
-  position: absolute;
-  width: 1000px;
-  height: 500px;
-  background-color: $success;
-}
-
-.mapboxgl-popup-content {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  background-color: $success;
-}
-
-.btn-valid-trip {
-  position: absolute;
-  background-color: $primary;
-  color: white;
-  padding: 10px;
-  margin-left: 200px;
   margin-top: 50px;
+  margin-left: 693px;
+  background-color: white;
   border-radius: 5px;
-  font-family: Rubik;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 
-  &:hover {
-    border: 1px solid #aedaa6;
-    color: #aedaa6;
-    cursor: pointer;
-  }
-}
-
-.roadsheet {
-  width: 40%;
+  h4 {
+    font-family: Rubik;
+    font-size: 14px;
+    font-color: #757575;
+    padding-top: 10px;
+    padding-left: 5px;
+    justify-content: right;
+    }
 }

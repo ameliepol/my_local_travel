@@ -1,18 +1,32 @@
+.mapboxgl-popup {
+  position: absolute;
+  border-radius: 5px;
+  width: 1000px;
+  height: 500px;
+  background-color: $success;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: $success;
+}
+
 #info-popup {
   position: absolute;
+  border-radius: 5px;
   top: 50px;
-  left: 20px;
-  right: 20px;
-  bottom: 30px;
+  left: 10px;
+  right: 10px;
+  bottom: 95px;
   background: $success;
   z-index: 100;
-  border-left: 2px solid #efefef;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 
  h1 {
    color: black;
    font-weight: 300;
-   padding-top: 15px;
+   padding-top: 5px;
    text-transform: uppercase;
    margin: 0;
    font-size: 32px;
@@ -23,8 +37,11 @@
   color: black;
   margin: 0;
   font-size: 24px;
+  color: $primary;
+  font-family: Rubik;
   text-transform: uppercase;
   font-weight: 500;
+  text-align: center;
  }
 
  h3 {
@@ -38,15 +55,16 @@
  p {
   font-family: Work Sans;
   font-size: 12px;
-  text-transform: uppercase;
+  font-family: Rubik;
   line-height: 20px;
   color: black;
-  padding: 20px 0;
+  padding:  10px;
   margin: 0;
 }
 }
 
 .btn-quit {
+  border-radius: 5px;
   background-color: $success;
   font-color: darkgrey;
   font-size: 16px;
@@ -62,11 +80,9 @@
 
 .photo-popup {
   position: relative;
-  margin: 0px;
-  padding-top: 30px;
-  padding-left: 150px;
-  padding-bottom: 40px;
-  align-content: space-around;
+  margin: 0 auto;
+  padding: 15px;
+  justify-content: center;
   max-width: 80%;
   max-height: 300px;
 }
@@ -78,7 +94,7 @@
 
 .popup-content {
   font-family: Work Sans;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -89,7 +105,7 @@
   color: white;
   width: 170px;
   padding: 10px;
-  margin-left: 300px;
+  margin: 0 auto;
   justify-content: center;
   margin-top: 12px;
   border-radius: 5px;
@@ -101,23 +117,4 @@
     color: #aedaa6;
     cursor: pointer;
   }
-
-// .btn-add a {
-//     font-color: white;
-//   }
- //  border: 1px solid #d9d9d9;
- //  border-radius: 5px;
- //  padding: 15px 0;
- //  margin-bottom: 30px;
- //  background-color: $success;
- //  font-color: $success;
- //  text-transform: uppercase;
- //  width: 125px;
- //  margin-right: 5px;
- //  font-weight: 500;
-
- //  &:hover {
- // border: 1px solid #aedaa6;
- // color: #aedaa6;
- // cursor: pointer;
 }
