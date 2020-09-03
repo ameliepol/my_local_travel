@@ -12,7 +12,19 @@ const initSortable = () => {
       group: 'shared',
       multiDrag: true,
       selectedClass: "selected",
-      animation: 150
+      animation: 150,
+      onEnd: function (/**Event*/evt) {
+        var itemEl = evt.item;
+        var btnUpdate = itemEl.querySelector(".btn-update-selected-activity");
+        btnUpdate.classList.add("btn-primary");
+        var itemOptions = itemEl.querySelectorAll("option");
+        itemOptions.forEach((itemOption) => {
+          itemOption.selected = false;
+          if (itemOption.value === evt.to.dataset.dayId ){
+            itemOption.selected = true;
+          }
+        });
+      }
     })
   };
 
@@ -21,7 +33,19 @@ const initSortable = () => {
       group: 'shared',
       multiDrag: true,
       selectedClass: "selected",
-      animation: 150
+      animation: 150,
+      onEnd: function (/**Event*/evt) {
+        var itemEl = evt.item;
+        var btnUpdate = itemEl.querySelector(".btn-update-selected-activity");
+        btnUpdate.classList.add("btn-primary");
+        var itemOptions = itemEl.querySelectorAll("option");
+        itemOptions.forEach((itemOption) => {
+          itemOption.selected = false;
+          if (itemOption.value === evt.to.dataset.dayId ){
+            itemOption.selected = true;
+          }
+        });
+      }
     })
   };
 
@@ -30,7 +54,19 @@ const initSortable = () => {
       group: 'shared',
       multiDrag: true,
       selectedClass: "selected",
-      animation: 150
+      animation: 150,
+      onEnd: function (/**Event*/evt) {
+        var itemEl = evt.item;
+        var btnUpdate = itemEl.querySelector(".btn-update-selected-activity");
+        btnUpdate.classList.add("btn-primary");
+        var itemOptions = itemEl.querySelectorAll("option");
+        itemOptions.forEach((itemOption) => {
+          itemOption.selected = false;
+          if (itemOption.value === evt.to.dataset.dayId ){
+            itemOption.selected = true;
+          }
+        });
+      }
     })
   };
 
@@ -39,7 +75,19 @@ const initSortable = () => {
       group: 'shared',
       multiDrag: true,
       selectedClass: "selected",
-      animation: 150
+      animation: 150,
+      onEnd: function (/**Event*/evt) {
+        var itemEl = evt.item;
+        var btnUpdate = itemEl.querySelector(".btn-update-selected-activity");
+        btnUpdate.classList.add("btn-primary");
+        var itemOptions = itemEl.querySelectorAll("option");
+        itemOptions.forEach((itemOption) => {
+          itemOption.selected = false;
+          if (itemOption.value === evt.to.dataset.dayId ){
+            itemOption.selected = true;
+          }
+        });
+      }
     })
   };
 }

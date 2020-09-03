@@ -9,30 +9,25 @@
       <div>
         <% @trip.days.each do |day| %>
         <h3> <%= day %></h3>
-        <div id="day_<%= day.position %>">
+        <div id="day_<%= day.position %>" data-day-id="<%= day.id %>">
           <% day.selected_activities.each do |selected_activity| %>
-            <div class='activity-list'><%= selected_activity.activity.name %></div>
+            <div class='activity-list'>
+              <%= selected_activity.activity.name %>
+                <%= simple_form_for selected_activity do |f| %>
+                <div class="d-none">
+                  <%= f.input :day_id, collection: @trip.days %>
+                </div>
+                <%= f.submit "", class: "btn-update-selected-activity" %>
+                <% end %>
+            </div>
           <% end %>
 
         </div>
         <% end %>
       </div>
-      <div class="btn-valid-trip" id="valider-trip" data-url="<%= trip_url(@trip.id) %>">Valider trip</div>
+<!--       <div class="btn-valid-trip" id="valider-trip" data-url="<%= trip_url(@trip.id) %>">Valider trip</div>
+ -->  <%= link_to "Valider trip", trip_path(@trip), class: "btn-valid-trip" %>
     </div>
-
-  <div>
-   <% @trip.days.each do |day| %>
-    <% day.selected_activities.each do |selected_activity| %>
-      <%= selected_activity.activity.name %>
-      <%= simple_form_for selected_activity do |f| %>
-        <%= f.input :day_id, collection: @trip.days %>
-        <%= f.submit %>
-      <% end %>
-    <% end %>
-    <hr>
-  <% end %>
-
-  </div>
 
   <div id="map"
     data-markers="<%= @markers.to_json %>"
