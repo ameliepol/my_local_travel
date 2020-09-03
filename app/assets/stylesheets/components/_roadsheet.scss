@@ -1,0 +1,23 @@
+.roadsheet {
+  padding: 20px;
+  background-color: $success;
+  width: 40%;
+}
+
+.btn-valid-trip {
+  background-color: $primary;
+  color: white;
+  padding: 10px;
+  margin: 0 auto;
+  justify-content: center;
+  width: 150px;
+  margin-top: 40px;
+  border-radius: 5px;
+  font-family: Rubik;
+  text-align: center;
+
+  &:hover {
+    color: #aedaa6;
+    cursor: pointer;
+  }
+}
