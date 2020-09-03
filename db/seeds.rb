@@ -48,7 +48,6 @@ puts "Creating activities..."
 # activity_25 = Activity.create!(name: "Pique-Nique Gourmand", fee: 30, localisation: "Saumos", mood: 2, category: 2, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
 # activity_26 = Activity.create!(name: "Cabane cocoon au bord de l’eau", fee: 70, localisation: "Valeyrac", mood: 2, category: 1, photo_url: "",  budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
 # activity_27 = Activity.create!(name: "Initiation à la biodynamie et dégustation", fee: 30, localisation: "Saint-Emilion",  mood: 2, category: 3, photo_url: "",  budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-# activity_28 = Activity.create!(name: "Visite de la Ferme", fee: 25, localisation: "Queyrac",  mood: 2, category: 3, photo_url: "",  budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
 # activity_31 = Activity.create!(name: "Camping du Lac", fee: 40, localisation: "Hourtin", mood: 2, category: 1, photo_url: "",  budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
 # activity_32 = Activity.create!(name: "Balade en canoë et observation des oiseaux", fee: 20,  localisation: "Cadillac", mood: 2, category: 3, photo_url: "",  budget: 1, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
 # activity_33 = Activity.create!(name: "Maison tout confort et calme", fee: 60, localisation: "Podensac", mood: 2, category: 1, photo_url: "", budget: 2, content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
@@ -299,45 +298,35 @@ Trip.create!(start_date: Date.today, end_date: Date.today, user: User.first, add
 # ])
 # activity_25.save
 
-file76 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599050011/actv26_1.jpg')
-file77 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997111/actv10_1_oor5dg.jpg')
-file78 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv10_3_aqml1s.jpg')
-activity_26.photos.attach([
-  {io: file76, filename: 'file76.jpg', content_type: 'image/png'},
-  {io: file77, filename: 'file77.jpg', content_type: 'image/png'},
-  {io: file78, filename: 'file78.jpg', content_type: 'image/png'}
-])
-activity_26.save
+# file76 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599050011/actv26_1.jpg')
+# file77 = URI.open('hhttps://res.cloudinary.com/dwekobmrk/image/upload/v1599111647/actv26_2_fl1apf.jpg')
+# file78 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599111647/actv26_3_ngf7u0.jpg')
+# activity_26.photos.attach([
+#   {io: file76, filename: 'file76.jpg', content_type: 'image/png'},
+#   {io: file77, filename: 'file77.jpg', content_type: 'image/png'},
+#   {io: file78, filename: 'file78.jpg', content_type: 'image/png'}
+# ])
+# activity_26.save
 
-file79 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599050236/actv27_1.jpg')
-file80 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599050750/actv28_2.jpg')
-file81 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598818685/guinguette_cdhmpv.jpg')
-activity_27.photos.attach([
-  {io: file79, filename: 'file79.jpg', content_type: 'image/png'},
-  {io: file80, filename: 'file80.jpg', content_type: 'image/png'},
-  {io: file81, filename: 'file81.jpg', content_type: 'image/png'}
-])
-activity_27.save
+# file79 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599111853/actv27_3_srqbxz.jpg')
+# file80 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599050750/actv28_2.jpg')
+# file81 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599050236/actv27_1.jpg')
+# activity_27.photos.attach([
+#   {io: file79, filename: 'file79.jpg', content_type: 'image/png'},
+#   {io: file80, filename: 'file80.jpg', content_type: 'image/png'},
+#   {io: file81, filename: 'file81.jpg', content_type: 'image/png'}
+# ])
+# activity_27.save
 
-file82 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599050750/actv28_1.jpg')
-file83 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599050750/actv28_2.jpg')
-file84 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997111/actv12_3_jovj25.jpg')
-activity_28.photos.attach([
-  {io: file82, filename: 'file82.jpg', content_type: 'image/png'},
-  {io: file83, filename: 'file83.jpg', content_type: 'image/png'},
-  {io: file84, filename: 'file84.jpg', content_type: 'image/png'}
-])
-activity_28.save
-
-file91 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051153/actv31_1.jpg')
-file92 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051166/actv31_2.jpg')
-file93 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1598997110/actv15_3_dnt8wn.jpg')
-activity_31.photos.attach([
-  {io: file91, filename: 'file91.jpg', content_type: 'image/png'},
-  {io: file92, filename: 'file92.jpg', content_type: 'image/png'},
-  {io: file93, filename: 'file93.jpg', content_type: 'image/png'}
-])
-activity_31.save
+# file91 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051153/actv31_1.jpg')
+# file92 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051166/actv31_2.jpg')
+# file93 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599112121/actv31_3_nppgfi.jpg')
+# activity_31.photos.attach([
+#   {io: file91, filename: 'file91.jpg', content_type: 'image/png'},
+#   {io: file92, filename: 'file92.jpg', content_type: 'image/png'},
+#   {io: file93, filename: 'file93.jpg', content_type: 'image/png'}
+# ])
+# activity_31.save
 
 # file94 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051275/actv32_1.jpg')
 # file95 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599051279/actv32_2.jpg')

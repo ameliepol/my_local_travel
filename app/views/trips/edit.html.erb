@@ -9,7 +9,6 @@
       </div>
       <% if @days_number ==  1 %>
         <div id="day_one">Jour 1</div>
-
       <% elsif @days_number == 2 %>
         <div id="day_one">Jour 1</div>
         <div id="day_two">Jour 2</div>
@@ -20,6 +19,17 @@
       <% end %>
       <div class="btn-valid-trip" id="valider-trip" data-url="<%= trip_url(@trip.id) %>">Valider trip</div>
   </div>
+
+  <!-- 1-formulaire d'update d'une selected_activity
+  == dans le update, objectif: modifier le jour
+  2- faire update dans trip ctrlr
+  3-plusieurs form de selected_activity (each)
+  4- -->
+
+  <%= simple_form_for @selected_activity do |f| %>
+    <%= f.input :activity_id %>
+    <%= f.input :day_id %>
+  <% end %>
 
   <div id="map"
     data-markers="<%= @markers.to_json %>"

@@ -17,4 +17,11 @@ class SelectedActivitiesController < ApplicationController
     end
   end
 
+
+def update
+  @selected_activity = SelectedActivity.find(params[:id])
+  @selected_activity.day = @day_id
+  @selected_activity.day.update
+end
+
 end
