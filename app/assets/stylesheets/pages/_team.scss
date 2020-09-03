@@ -1,16 +1,46 @@
-.team {
-  background: white;
+
+.team-photo {
   width: 100%;
+}
+
+
+.team {
+
+
   display:flex;
   justify-content: center;
+
+}
+
+
+.team-header{
+  width: 30%;
+  border-radius: 5px;
+  background-color: $my-beige;
+  margin: 25px auto;
+
+    padding: 10px;
+  text-align: center;
+
+}
+
+.team-header h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Rubik";
+  color: $my-green;
+
+
 }
 
 .team-main {
-
-  width: 80%;
+  display:flex;
+  justify-content: center;
+  width: 63%;
   border-radius: 5px;
   background-color: $my-beige;
-  margin-top: 30px;
+
   padding-top: 15px;
 
 
