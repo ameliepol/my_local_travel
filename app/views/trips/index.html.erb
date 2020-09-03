@@ -1,26 +1,30 @@
-<div class="container">
-  <h1>Mes Voyages</h1>
-  <div class="container-trips">
-    <% @trips.each do |trip| %>
-      <div class="card-trip">
-        <%= image_tag "domaine_detente.png" %>
-        <div class="card-trip-details">
-          <h3><%= trip.address %>€</h3>
+<div class="main-container">
+  <%= render 'shared/navbar' %>
+  <div class="trips_index">
+    <div class="trips-main">
+      <h1>Mes Voyages</h1>
+      <div class="row">
+        <% @trips.each do |trip| %>
+        <div class="col-6">
+          <div class="card-trip">
+            <%= image_tag Trip.random_image %>
+            <div class="card-trip-details">
+            </div>
+            <div class="card-trip-infos">
+              <h2 class="name"><%= trip.address %></h2>
+              <div class="trip-link">
+                <p> Start : <%= trip.start_date %></p>
+                <p> End : <%= trip.end_date %></p>
+              </div>
+            </div>
+            <div class="card-button">
+              <p><%= link_to "Modifier mon voyage",  edit_trip_path(trip), class: "btn btn-primary btn-sm" %></p>
+            </div>
+          </div>
         </div>
-        <div class="card-trip-dates">
-        <p> Start : <%= trip.start_date %></p>
-        <p> End : <%= trip.end_date %></p>
-        </div>
-        <div class="card-button">
-          <p>
-            <%= link_to "Modifier mon voyage",  edit_trip_path(trip), class: "btn btn-outline-info btn-sm" %>
-          </p>
-        </div>
+        <% end %>
       </div>
-    <% end %>
-  </div>
-
-  <div class="container-trips">
-  <%= link_to "Page d'accueil",  root_path, class: "btn btn-primary"  %>
+      <%= link_to "Page d'accueil",  root_path, class: "btn btn-primary"  %>
+    </div>
   </div>
 </div>

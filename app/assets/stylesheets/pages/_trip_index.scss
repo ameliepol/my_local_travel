@@ -1,0 +1,76 @@
+.trips_index {
+  background: white;
+  width: 100%;
+  display:flex;
+}
+
+.trips-main {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 5px;
+  // background-color: $my-beige;
+  margin-top: 30px;
+  padding: 15px;
+  text-align: center;
+}
+
+.trips-main h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Rubik";
+
+}
+
+.trips-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 170px;
+  padding-left: 170px;
+  padding-bottom: 40px;
+}
+
+.card-trip {
+  // overflow: hidden;
+  background: white;
+  box-shadow: 2px 5px 6px 5px rgba(0, 0, 0, 0.03), 5px 5px 10px -2px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+
+
+}
+
+.card-trip > img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+
+
+}
+
+.card-trip h2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 2px;
+  padding: 4px;
+  font-family: "Rubik";
+}
+
+.card-trip p {
+  font-size: 14px;
+  //font-style: italic;
+  font-weight: bolder;
+  font-family: "Rubik";
+  opacity: .7;
+  margin: 0;
+}
+
+.card-trip-infos {
+  padding: 6px;
+  padding-top: -2px;
+
+
+}

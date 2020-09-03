@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_27_100859) do
+ActiveRecord::Schema.define(version: 2020_09_03_163510) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(version: 2020_08_27_100859) do
     t.bigint "trip_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "position"
     t.index ["trip_id"], name: "index_days_on_trip_id"
   end
 
@@ -95,6 +96,7 @@ ActiveRecord::Schema.define(version: 2020_08_27_100859) do
     t.bigint "activity_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "pending"
     t.index ["activity_id"], name: "index_selected_activities_on_activity_id"
     t.index ["day_id"], name: "index_selected_activities_on_day_id"
   end

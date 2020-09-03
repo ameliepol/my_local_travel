@@ -7,7 +7,7 @@ class TripsController < ApplicationController
     if @search.valid?
       @trip = Trip.new(start_date: @search.start_date, address: @search.address, radius: @search.radius, user: current_user, end_date: @search.start_date, mood: @search.mood, budget: @search.budget)
       @trip.save!
-      @search.days_number.times { Day.create!(trip: @trip) }
+      @search.days_number.times { |i| Day.create!(trip: @trip, position: (i+1)) }
       redirect_to edit_trip_path(@trip)
     else
 
@@ -18,7 +18,7 @@ class TripsController < ApplicationController
   def show
     @trip = Trip.find(params[:id])
 
-    @markers = Activity.all.map do |activity|
+    @markers = Activity.first(3).map do |activity|
       if activity.category == "Hébergement"
         truc = "picto_hebergement.png"
       elsif activity.category == "Restauration"
@@ -37,7 +37,7 @@ class TripsController < ApplicationController
       }
     end
 
-    @coords = Activity.all.map do |activity|
+    @coords = Activity.first(3).map do |activity|
       "#{activity[:longitude]},#{activity[:latitude]}"
     end
   end
@@ -74,12 +74,12 @@ class TripsController < ApplicationController
   end
 
   def update
-    @trip = Trip.find(params[:id])
-    redirect_to trip_path(@trip)
+
   end
 
   private
   def search_params
     params.require(:search).permit(:mood, :budget, :days_number, :address, :start_date, :radius)
   end
+
 end

@@ -1,48 +1,67 @@
-
+<div class="main-container">
 <%= render 'shared/navbar' %>
-
 <div class="container-map">
   <div class="roadsheet">
     <h2>Feuille de route</h2>
-      <div id="stock_zone">
+      <div id="day_0">
+        <% @trip.selected_activities.where(pending: true).each do |selected_activity| %>
+          <div class='activity-list'>
+              <%= selected_activity.activity.name %>
+                <%= simple_form_for selected_activity do |f| %>
+                <div class="d-none">
+                  <%= f.input :day_id, collection: @trip.days %>
+                </div>
+                <%= f.submit "", class: "btn-update-selected-activity" %>
+                <% end %>
+            </div>
+        <% end %>
+
         Sélectionnez vos activités et déplacez-les dans la feuille de route :
       </div>
-      <% if @days_number ==  1 %>
-        <div id="day_one">Jour 1</div>
+      <div>
+        <% @trip.days.each do |day| %>
+        <h3> <%= day %></h3>
+        <div id="day_<%= day.position %>" data-day-id="<%= day.id %>">
+          <% day.selected_activities.where(pending: false).each do |selected_activity| %>
+            <div class='activity-list'>
+              <%= selected_activity.activity.name %>
+                <%= simple_form_for selected_activity do |f| %>
+                <div class="d-none">
+                  <%= f.input :day_id, collection: @trip.days %>
+                </div>
+                <%= f.submit "", class: "btn-update-selected-activity" %>
+                <% end %>
+            </div>
+          <% end %>
 
-      <% elsif @days_number == 2 %>
-        <div id="day_one">Jour 1</div>
-        <div id="day_two">Jour 2</div>
-      <% else @days_number == 3 %>
-        <div id="day_one">Jour 1</div>
-        <div id="day_two">Jour 2</div>
-        <div id="day_three">Jour 3</div>
-      <% end %>
-      <div class="btn-valid-trip" id="valider-trip" data-url="<%= trip_url(@trip.id) %>">Valider trip</div>
-  </div>
+        </div>
+        <% end %>
+      </div>
+<!--       <div class="btn-valid-trip" id="valider-trip" data-url="<%= trip_url(@trip.id) %>">Valider trip</div>
+ -->  <%= link_to "Valider trip", trip_path(@trip), class: "btn-valid-trip" %>
+    </div>
 
   <div id="map"
     data-markers="<%= @markers.to_json %>"
     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
 
-    <!-- <div class="legend-ctnr"> -->
       <div id="legend">
       <h4><%= image_tag "picto_hebergement.png", width: 25 %> Hébergement</h4>
       <h4><%= image_tag "picto_alimentation.png", width: 25 %> Alimentation</h4>
       <h4><%= image_tag "picto_diurne.png", width: 25 %> Sortie en journée</h4>
       <h4><%= image_tag "picto_nocturne.png", width: 25 %> Sortie en soirée</h4>
       </div>
-    <!-- </div> -->
 
     <div id="info-popup" class="d-none">
       <div class="btn-quit">x</div>
       <div class="infos"></div>
     </div>
   </div>
+
+  <%#= yield :page_scripts %>
+  <%# content_for :head do %>
+    <%#= javascript_pack_tag "mapbox", 'data-turbolinks-track': 'reload', defer: true  %>
+  <%# end %>
+
 </div>
-
-<%= yield :page_scripts %>
-<% content_for :head do %>
-  <%= javascript_pack_tag "mapbox", 'data-turbolinks-track': 'reload', defer: true  %>
-<% end %>
-
+</div>

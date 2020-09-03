@@ -6,12 +6,18 @@ const incrementedList = () => {
   const buttonAdd = document.querySelector('.btn-add')
   if (buttonAdd) {
     buttonAdd.addEventListener('click', (event) => {
-      const activityList = document.getElementById('stock_zone');
+      const activityList = document.getElementById('day_0');
       const titleActivity = document.querySelector('.mapboxgl-popup-content h2');
-      activityList.insertAdjacentHTML("beforeend", `<div class='activity-list'>${titleActivity.innerText}</div>`)
+      activityList.insertAdjacentHTML("beforeend",
+        `<div class='activity-list'>
+          ${titleActivity.innerText}
+        </div>
+      `)
       document.querySelector("#info-popup > .btn-quit").click();
     });
   }
 }
 
 export { incrementedList };
+
+

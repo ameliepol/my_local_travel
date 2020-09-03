@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   end
 
   resources :searches, only: [ :new ]
+  resources :selected_activities, only: [:update]
 end
