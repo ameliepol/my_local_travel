@@ -1,6 +1,7 @@
 class Trip < ApplicationRecord
   belongs_to :user
   has_many :days
+  has_many :selected_activities, through: :days
 
   validates :address, presence: true
   validates :start_date, presence: true

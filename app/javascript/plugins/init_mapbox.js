@@ -39,7 +39,7 @@ const addMarkersToMap = (map, markers) => {
     element.addEventListener("click", (e) => {
       infoBox.innerHTML = marker.infoWindow;
       infoPopup.classList.remove("d-none");
-      incrementedList();
+      // incrementedList();
     })
 
     new mapboxgl.Marker(element)
