@@ -5,25 +5,26 @@
     <% end %>
     <div class="navbar-right">
       <% if user_signed_in? %>
-        <%= link_to "Mon prochain voyage", new_search_path, class: "btn btn-white"%>
-        <%= link_to "Nos valeurs", charte_path, class: "btn btn-white"%>
-        <%= link_to "Notre équipe", team_path, class: "btn btn-white"%>
-        <%= link_to "Contact", contact_path, class: "btn btn-white" %>
-        <li class="nav-item dropdown">
-          <%= image_tag "tata_murielle.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "Mes voyages", trips_path, class: "dropdown-item" %>
-            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-          </div>
-        </li>
+      <%= link_to "Mon prochain voyage", new_search_path, class: "btn btn-white"%>
+      <%= link_to "Nos valeurs", charte_path, class: "btn btn-white"%>
+      <%= link_to "Notre équipe", team_path, class: "btn btn-white"%>
+      <%= link_to "Contact", contact_path, class: "btn btn-white" %>
+      <li class="nav-item dropdown">
+        <%= image_tag "tata_murielle.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <%= link_to "Mes voyages", trips_path, class: "dropdown-item" %>
+          <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+        </div>
+      </li>
       <% else %>
-        <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-        </li>
+      <li class="nav-item">
+        <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+      </li>
       <% end %>
     </div>
   </nav>
   <div class="video-container" id="video">
-      <%= video_tag "video1.mp4", autoplay: :autoplay, loop: :loop, muted: :muted, class: "home_video" %>
+    <h1 id="slogan">Voyager local & durable</h1>
+    <%= video_tag "video1.mp4", autoplay: :autoplay, loop: :loop, muted: :muted, class: "home_video" %>
   </div>
 </div>

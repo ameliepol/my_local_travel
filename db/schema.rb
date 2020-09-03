@@ -66,7 +66,6 @@ ActiveRecord::Schema.define(version: 2020_09_03_163510) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "position"
-    t.boolean "pending"
     t.index ["trip_id"], name: "index_days_on_trip_id"
   end
 
