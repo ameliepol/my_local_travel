@@ -7,7 +7,7 @@ const initFlatpickr = () => {
   if (element) {
     flatpickr(element, {
       // altInput: true,
-      dateFormat: "d F Y",
+      dateFormat: "l d F Y",
       mode: "single",
       minDate: "today",
       locale: 'fr'
