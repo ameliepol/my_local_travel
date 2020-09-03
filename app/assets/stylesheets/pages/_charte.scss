@@ -5,6 +5,23 @@
   display:flex;
   justify-content: center;
 }
+.photo-banner {
+  background-size: cover;
+  object-fit: countain;
+  background-position: center;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f4f0ec;
+  font-size: 36px;
+
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-family: "Rubik";
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 100%;
+  margin-top: 20px;
+}
 
 .charte-main {
 

@@ -34,17 +34,20 @@
 }
 
 .green {
+  object-fit: cover;
   flex-grow: 3;
   overflow: hidden;
   background-size: 100% 150%;
   background-image: url("https://res.cloudinary.com/dwekobmrk/image/upload/v1598554195/My%20local%20travel/Aventurier/kimson-doan-AZMmUy2qL6A-unsplash_k2v8yy_rtzy30_ps33um.jpg")
 }
 .blue {
+  object-fit: cover;
   margin-left: 16px;
   background-size: 100% 150%;
   background-image: url("https://res.cloudinary.com/dwekobmrk/image/upload/v1598556671/My%20local%20travel/Epicurien/victor-rodriguez-iglesias-zTG8dSz10tQ-unsplash_dkzb2z_duymcx.jpg")
 }
 .yellow {
+  object-fit: cover;
   flex-grow: 3;
   background-size: 100% 100%;
   background-image: url("https://res.cloudinary.com/dwekobmrk/image/upload/v1598558093/My%20local%20travel/Aventurier/esther-tuttle-dyjH3YMblpo-unsplash_ia3p3d_mz1csl.jpg")
@@ -63,11 +66,13 @@
 }
 
 .red {
-  background-size: 100% 100%;
+  object-fit: cover;
+  background-size: cover;
   background-image: url("https://res.cloudinary.com/dwekobmrk/image/upload/v1598365590/My%20local%20travel/Aventurier/elizeu-dias-xarhNpLSHTk-unsplash_pqvr2f.jpg")
 }
 
 .grey {
+  object-fit: cover;
   margin-left: 16px;
   flex-basis: 69%;
   background-size: 100% 100%;
@@ -116,7 +121,7 @@
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.5);
 
     &:hover {
       background-color: rgba(255,255,255,0.5);
