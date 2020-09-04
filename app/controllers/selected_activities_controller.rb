@@ -13,11 +13,11 @@ class SelectedActivitiesController < ApplicationController
 
     @selected_activity.save
 
-    redirect_to edit_trip_path(@trip)
-    # respond_to do |format|
-    #   format.html { redirect_to edit_trip_path(@trip) }
-    #   format.js
-    # end
+    # redirect_to edit_trip_path(@trip)
+    respond_to do |format|
+      format.html { redirect_to edit_trip_path(@trip) }
+      format.js
+    end
   end
 
 
@@ -26,7 +26,11 @@ def update
   @selected_activity.pending = false
   @selected_activity.update(selected_activity_params)
   @trip = @selected_activity.day.trip
-  redirect_to edit_trip_path(@trip)
+  # redirect_to edit_trip_path(@trip)
+  respond_to do |format|
+    format.html { redirect_to edit_trip_path(@trip) }
+    format.js
+  end
 end
 
 private

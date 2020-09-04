@@ -1,0 +1,13 @@
+<div class='activity-list' id="id-<%= selected_activity.id %>">
+  <div>
+    <%= selected_activity.activity.name %>
+  </div>
+  <div>
+    <%= simple_form_for selected_activity, remote: true do |f| %>
+      <div class="d-none">
+        <%= f.input :day_id, collection: selected_activity.day.trip.days %>
+      </div>
+      <%= f.submit "OK", class: "btn-update-selected-activity d-none" %>
+    <% end %>
+  </div>
+</div>
