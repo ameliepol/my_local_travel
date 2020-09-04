@@ -49,15 +49,18 @@
 }
 
 #slogan {
-  color: #6d886d;
+  color: white;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  // align-items: center;
+  // justify-content: center;
   z-index: 1;
-  font-size: xxx-large;
+  font-size: 72px;
   position: absolute;
-  padding-top: 65px;
-  padding-left: 16px;
+  width: 440px;
+  // padding-top: 65px;
+  // padding-left: 16px;
+  top: 257px;
+  left: 70px;
 }
 
 

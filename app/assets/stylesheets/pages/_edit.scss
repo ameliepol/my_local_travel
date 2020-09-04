@@ -6,9 +6,13 @@ h2 {
 
 #day_0 {
   text-align: center;
+  padding-bottom: 15px;
 }
 
 .activity-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
   border: 1px solid #6d886d;
   border-radius: 5px;
   padding: 10px;
@@ -17,8 +21,8 @@ h2 {
 }
 
 .selected {
-  border-color: #aedaa6;
-  background-color: #aedaa6 !important;
+  // border-color: #aedaa6;
+  // background-color: #aedaa6 !important;
   z-index: 1 !important;
 
   &:hover {
@@ -29,7 +33,6 @@ h2 {
 #day_1 {
   margin-top: 20px;
   font-size: 16px;
-  font-weight: bold;
   text-align: center;
 
   &:hover {
@@ -40,7 +43,6 @@ h2 {
 #day_2 {
   margin-top: 20px;
   font-size: 16px;
-  font-weight: bold;
   text-align: center;
 
   &:hover {
@@ -51,11 +53,23 @@ h2 {
 #day_3 {
   margin-top: 20px;
   font-size: 16px;
-  font-weight: bold;
   text-align: center;
 
   &:hover {
     cursor: grab;
   }
+}
+
+.btn-valid-activity {
+  font-size: 10px;
+  background-color: $primary;
+  font-color: $success;
+  border: none;
+}
+
+.btn-update-selected-activity {
+  font-size: 10px;
+  background-color: $success;
+  border: none;
 }
 
