@@ -16,7 +16,11 @@
         <% end %>
       </div>
 <!--       <div class="btn-valid-trip" id="valider-trip" data-url="<%= trip_url(@trip.id) %>">Valider trip</div>
- -->  <%= link_to "Mes voyages", trips_path, class: "btn-valid-trip" %>
+ -->
+<div class="w-100 d-flex justify-content-center">
+      <%= link_to "Mes voyages", trips_path, class: "btn-valid-trip" %>
+      <%= link_to "Download", trips_path(@trip), download:true, class: "btn-valid-trip" %>
+    </div>
     </div>
 
    <div id="map"
