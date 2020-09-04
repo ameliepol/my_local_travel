@@ -14,7 +14,7 @@ puts "Creating users ...."
 user1 = User.create!(email: "murielle@gmail.com", password: "password_user1", nickname: "Mumu", photo_url: "", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
 # user2 = User.create!(email: "richard@gmail.com", password: "password_user2", nickname: "Riton", photo_url: "", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
 user3 = User.create!(email: "kevin@gmail.com", password: "password_user3", nickname: "Kev", photo_url: "", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-# user4 = User.create!(email: "carla@gmail.com", password: "password_user4", nickname: "Carlita", photo_url: "", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+user4 = User.create!(email: "carla@gmail.com", password: "password_user4", nickname: "Carlita", photo_url: "", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
 # user5 = User.create!(email: "diego@gmail.com", password: "password_user5", nickname: "Don Diego", photo_url: "", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
 # user6 = User.create!(email: "germaine@gmail.com", password: "password_user6", nickname: "Mamie Germaine", photo_url: "", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
 
@@ -62,6 +62,7 @@ activity_36 = Activity.create!(name: "Au paradis du papillon", fee: 25, localisa
 activity_37 = Activity.create!(name: "Les Ecogîtes Floréale", fee: 49, localisation: "Audenge", mood: 2, category: 1, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
 activity_38 = Activity.create!(name: "Camping Le Paradis", fee: 49, localisation: "Saint-Laurent-Médoc", mood: 2, category: 1, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
 activity_39 = Activity.create!(name: "Gîte La Maison dans les Vignes", fee: 49, localisation: "Riocaud", mood: 2, category: 1, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
+activity_40 = Activity.create!(name: "Atelier huiles essentielles", fee: 39, localisation: "Blagon", mood: 2, category: 3, photo_url: "", budget: 2, content: "Un lieu confidentiel où bien-être et calme s'unissent pour des moments uniques : Du bois brut pour une communion avec la nature, le corps et l’esprit. Vibrez grâce à l’atmosphère singulière du lieu... Offrez-vous un séjour inoubliable dans un écrin de verdure, près de Bordeaux…")
 
 Trip.create!(start_date: Date.today, end_date: Date.today, user: User.first, address: "Bordeaux", radius: 10, mood: 3, budget: 2)
 
@@ -335,8 +336,8 @@ activity_27.photos.attach([
 ])
 activity_27.save
 
-file100 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599156811/actv28_3_qomkb9.jpg')
-file101 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599156811/actv28_2_fuzsys.jpg')
+file100 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599156811/actv28_2_fuzsys.jpg')
+file101 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599156811/actv28_3_qomkb9.jpg')
 file102 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599156811/actv28_1_ulypd2.jpg')
 activity_28.photos.attach([
   {io: file100, filename: 'file100.jpg', content_type: 'image/png'},
@@ -454,5 +455,15 @@ activity_39.photos.attach([
   {io: file141, filename: 'file141.jpg', content_type: 'image/png'}
 ])
 activity_39.save
+
+file142 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599211834/actv40_1_ldhtgw.jpg')
+file143 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599211835/actv40_2_mjezto.png')
+file144 = URI.open('https://res.cloudinary.com/dwekobmrk/image/upload/v1599211834/actv40_3_urbtij.jpg')
+activity_40.photos.attach([
+  {io: file142, filename: 'file142.jpg', content_type: 'image/png'},
+  {io: file143, filename: 'file143.jpg', content_type: 'image/png'},
+  {io: file144, filename: 'file144.jpg', content_type: 'image/png'}
+])
+activity_40.save
 
 puts "Activities created!"
