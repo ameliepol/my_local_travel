@@ -5,19 +5,7 @@
       <div id="day_0">
         Sélectionnez vos activités et déplacez-les dans la feuille de route
         <% @trip.selected_activities.where(pending: true).each do |selected_activity| %>
-          <div class='activity-list'>
-            <div>
-              <%= selected_activity.activity.name %>
-            </div>
-             <div>
-               <%= simple_form_for selected_activity do |f| %>
-               <div class="d-none">
-                 <%= f.input :day_id, collection: @trip.days %>
-               </div>
-               <%= f.submit "OK", class: "btn-update-selected-activity d-none" %>
-               <% end %>
-             </div>
-            </div>
+          <%= render "selected_activities/form", selected_activity: selected_activity %>
         <% end %>
       </div>
       <div>
@@ -25,21 +13,8 @@
         <h3> <%= day.to_s.capitalize %></h3>
         <div id="day_<%= day.position %>" data-day-id="<%= day.id %>">
           <% day.selected_activities.where(pending: false).each do |selected_activity| %>
-            <div class='activity-list'>
-              <div>
-              <%= selected_activity.activity.name %>
-              </div>
-              <div>
-                <%= simple_form_for selected_activity do |f| %>
-                <div class="d-none">
-                  <%= f.input :day_id, collection: @trip.days %>
-                </div>
-                <%= f.submit "OK", class: "btn-update-selected-activity d-none" %>
-                <% end %>
-              </div>
-            </div>
+            <%= render "selected_activities/form", selected_activity: selected_activity %>
           <% end %>
-
         </div>
         <% end %>
       </div>
