@@ -17,7 +17,8 @@ const initSortable = () => {
         var itemEl = evt.item;
         var btnUpdate = itemEl.querySelector(".btn-update-selected-activity");
         if (btnUpdate) {
-          btnUpdate.classList.add("btn-primary");
+          btnUpdate.classList.remove("d-none");
+          // btnUpdate.classList.add("btn-valid-activity");
           var itemOptions = itemEl.querySelectorAll("option");
           itemOptions.forEach((itemOption) => {
             itemOption.selected = false;
@@ -40,7 +41,7 @@ const initSortable = () => {
         var itemEl = evt.item;
         var btnUpdate = itemEl.querySelector(".btn-update-selected-activity");
         if (btnUpdate) {
-          btnUpdate.classList.add("btn-primary");
+          btnUpdate.classList.remove("d-none");
           var itemOptions = itemEl.querySelectorAll("option");
           itemOptions.forEach((itemOption) => {
             itemOption.selected = false;
@@ -63,7 +64,7 @@ const initSortable = () => {
         var itemEl = evt.item;
         var btnUpdate = itemEl.querySelector(".btn-update-selected-activity");
         if (btnUpdate) {
-          btnUpdate.classList.add("btn-primary");
+          btnUpdate.classList.remove("d-none");
           var itemOptions = itemEl.querySelectorAll("option");
           itemOptions.forEach((itemOption) => {
             itemOption.selected = false;
@@ -84,9 +85,9 @@ const initSortable = () => {
       animation: 150,
       onEnd: function (/**Event*/evt) {
         var itemEl = evt.item;
-        var btnUpdate = itemEl.querySelector(".btn-update-selected-activity");
+          btnUpdate.classList.remove("d-none");
         if (btnUpdate) {
-          btnUpdate.classList.add("btn-primary");
+          btnUpdate.classList.add("btn-valid-activity");
           var itemOptions = itemEl.querySelectorAll("option");
           itemOptions.forEach((itemOption) => {
             itemOption.selected = false;

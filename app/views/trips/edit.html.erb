@@ -3,33 +3,40 @@
   <div class="roadsheet">
     <h2>Feuille de route</h2>
       <div id="day_0">
+        Sélectionnez vos activités et déplacez-les dans la feuille de route
         <% @trip.selected_activities.where(pending: true).each do |selected_activity| %>
           <div class='activity-list'>
+            <div>
               <%= selected_activity.activity.name %>
-                <%= simple_form_for selected_activity do |f| %>
-                <div class="d-none">
-                  <%= f.input :day_id, collection: @trip.days %>
-                </div>
-                <%= f.submit "", class: "btn-update-selected-activity" %>
-                <% end %>
+            </div>
+             <div>
+               <%= simple_form_for selected_activity do |f| %>
+               <div class="d-none">
+                 <%= f.input :day_id, collection: @trip.days %>
+               </div>
+               <%= f.submit "OK", class: "btn-update-selected-activity d-none" %>
+               <% end %>
+             </div>
             </div>
         <% end %>
-
-        Sélectionnez vos activités et déplacez-les dans la feuille de route :
       </div>
       <div>
         <% @trip.days.each do |day| %>
-        <h3> <%= day %></h3>
+        <h3> <%= day.to_s.capitalize %></h3>
         <div id="day_<%= day.position %>" data-day-id="<%= day.id %>">
           <% day.selected_activities.where(pending: false).each do |selected_activity| %>
             <div class='activity-list'>
+              <div>
               <%= selected_activity.activity.name %>
+              </div>
+              <div>
                 <%= simple_form_for selected_activity do |f| %>
                 <div class="d-none">
                   <%= f.input :day_id, collection: @trip.days %>
                 </div>
-                <%= f.submit "", class: "btn-update-selected-activity" %>
+                <%= f.submit "OK", class: "btn-update-selected-activity d-none" %>
                 <% end %>
+              </div>
             </div>
           <% end %>
 
@@ -37,8 +44,11 @@
         <% end %>
       </div>
 <!--       <div class="btn-valid-trip" id="valider-trip" data-url="<%= trip_url(@trip.id) %>">Valider trip</div>
- -->  <%= link_to "Valider trip", trip_path(@trip), class: "btn-valid-trip" %>
-    </div>
+ -->  <div class= "roadsheet-flex">
+        <div class="roadsheet-btn" >
+          <%= link_to "Valider trip", trip_path(@trip), class: "btn-valid-trip", style: "text-decoration: none" %> </div>
+        </div>
+      </div>
 
   <div id="map"
     data-markers="<%= @markers.to_json %>"
