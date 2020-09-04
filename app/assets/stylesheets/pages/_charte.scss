@@ -1,8 +1,11 @@
 .charte-main {
 
-
-
   width: 100%;
+}
+
+.background-image {
+background-position: center;
+background-size: cover;
 }
 
 
@@ -28,6 +31,7 @@
   background: white;
   width: 100%;
 
+
 }
 
 
@@ -38,7 +42,8 @@
   background-color: $my-beige;
   margin: 25px auto;
 
-    padding: 10px;
+  padding-top: 9px;
+  padding-bottom: 1px;
   text-align: center;
 
 }
@@ -50,7 +55,9 @@
   margin: 20px auto;
 
     padding: 10px;
-  text-align: center;
+  text-align: left;
+   padding-top: 9px;
+  padding-bottom: 1px;
 
 }
 
