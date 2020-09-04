@@ -1,45 +1,42 @@
-  <%= render 'shared/navbar' %>
-  <div class="container-map">
-    <div class="roadsheet">
-      <h2>Feuille de route</h2>
-          <!--<div id="stock_zone">
-            Sélectionnez vos activités et déplacez-les dans la feuille de route :
-          </div>-->
-          <% if @days_number ==  1 %>
-          <div id="day_one1">Jour 1</div>
+<%= render 'shared/navbar' %>
+<div class="container-map">
+  <div class="roadsheet">
+    <h2>Feuille de route</h2>
 
-          <% elsif @days_number == 2 %>
-          <div id="day_one">Jour 1</div>
-          <div id="day_two">Jour 2</div>
-          <% else @days_number == 3 %>
-          <div id="day_one">Jour 1</div>
-          <div id="day_two">Jour 2</div>
-          <div id="day_three">Jour 3</div>
+      <div>
+        <% @trip.days.each do |day| %>
+        <h3> <%= day %></h3>
+        <div id="day_<%= day.position %>" data-day-id="<%= day.id %>">
+          <% day.selected_activities.where(pending: false).each do |selected_activity| %>
+            <div class='activity-list'>
+              <%= selected_activity.activity.name %>
+            </div>
           <% end %>
-          <div class="btn-valid-trip" id="valider-trip" data-url="<%= trip_url(@trip.id) %>">Valider trip</div>
         </div>
-
-        <div id="map"
-        class="show-trip"
-        data-markers="<%= @markers.to_json %>"
-        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
-        data-coords="<%= @coords.join(';') %>"
-        >
-        <div class="legend">
-          <p> <%= image_tag "picto_hebergement.png", width: 25 %> Hébergement
-            <%= image_tag "picto_alimentation.png", width: 25 %> Alimentation
-            <%= image_tag "picto_diurne.png", width: 25 %> Sortie en journée
-            <%= image_tag "picto_nocturne.png", width: 25 %> Sortie en soirée
-          </p>
-        </div>
-        <div id="info-popup" class="d-none">
-          <div class="btn-quit">x</div>
-          <div class="infos"></div>
-        </div>
+        <% end %>
       </div>
+<!--       <div class="btn-valid-trip" id="valider-trip" data-url="<%= trip_url(@trip.id) %>">Valider trip</div>
+ -->  <%= link_to "Mes voyages", trips_path, class: "btn-valid-trip" %>
     </div>
 
-    <%= yield :page_scripts %>
-    <% content_for :head do %>
-    <%= javascript_pack_tag "mapbox", 'data-turbolinks-track': 'reload', defer: true  %>
-    <% end %>
+   <div id="map"
+    class="show-trip"
+    data-markers="<%= @markers.to_json %>"
+    data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+    data-coords="<%= @coords.join(';') %>"
+    >
+
+      <div id="legend">
+      <h4><%= image_tag "picto_hebergement.png", width: 25 %> Hébergement</h4>
+      <h4><%= image_tag "picto_alimentation.png", width: 25 %> Alimentation</h4>
+      <h4><%= image_tag "picto_diurne.png", width: 25 %> Sortie en journée</h4>
+      <h4><%= image_tag "picto_nocturne.png", width: 25 %> Sortie en soirée</h4>
+      </div>
+
+    <div id="info-popup" class="d-none">
+      <div class="btn-quit">x</div>
+      <div class="infos"></div>
+    </div>
+  </div>
+</div>
+</div>
