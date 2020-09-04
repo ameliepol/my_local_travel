@@ -2,12 +2,17 @@
   <div>
     <%= selected_activity.activity.name %>
   </div>
-  <div>
-    <%= simple_form_for selected_activity, remote: true do |f| %>
-      <div class="d-none">
-        <%= f.input :day_id, collection: selected_activity.day.trip.days %>
-      </div>
-      <%= f.submit "OK", class: "btn-update-selected-activity d-none" %>
+  <div class="d-flex">
+    <div>
+      <%= simple_form_for selected_activity, remote: true do |f| %>
+        <div class="d-none">
+          <%= f.input :day_id, collection: selected_activity.day.trip.days %>
+        </div>
+        <%= f.submit "OK", class: "btn-update-selected-activity d-none" %>
+      <% end %>
+    </div>
+    <%= link_to selected_activity_path(selected_activity), method: :delete, remote: true do %>
+      <i class="far fa-trash-alt"></i>
     <% end %>
   </div>
 </div>
