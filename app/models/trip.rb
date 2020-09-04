@@ -21,6 +21,10 @@ class Trip < ApplicationRecord
      "https://res.cloudinary.com/dwekobmrk/image/upload/v1599134109/k05yzh285kjiy9k3577q9fnudzyu.jpg",
      "https://res.cloudinary.com/dwekobmrk/image/upload/v1599134097/2z0wv6tlfi9fn9bxg0wibwptjzmk.jpg",
      "https://res.cloudinary.com/dwekobmrk/image/upload/v1599134084/h8s7clh605ydb15xvs4me69u5bzv.jpg",
-     "https://res.cloudinary.com/dwekobmrk/image/upload/v1599059262/o6qcx4v9h2lt2laocpoe7fe5f51y.jpg"].sample
+     "https://res.cloudinary.com/dwekobmrk/image/upload/v1599059262/o6qcx4v9h2lt2laocpoe7fe5f51y.jpg",
+     "https://res.cloudinary.com/dwekobmrk/image/upload/v1599166412/picnic2_vlrwgk.jpg",
+     "https://res.cloudinary.com/dwekobmrk/image/upload/v1599166020/rc3wmpcbzd87sh0e7ipg89lr5nvy.jpg",
+     "https://res.cloudinary.com/dwekobmrk/image/upload/v1599166005/g6y4uf085gqnxcxdwbx2pw7wqf66.jpg",
+     "https://res.cloudinary.com/dwekobmrk/image/upload/v1599165997/lilk6g7csg4hek29ufp6icwe4dzo.jpg"].sample
   end
 end
