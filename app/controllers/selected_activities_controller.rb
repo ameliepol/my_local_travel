@@ -33,6 +33,16 @@ def update
   end
 end
 
+def destroy
+  @selected_activity = SelectedActivity.find(params[:id])
+  @trip = @selected_activity.day.trip
+  @selected_activity.destroy
+  respond_to do |format|
+    format.html { redirect_to edit_trip_path(@trip) }
+    format.js
+  end
+end
+
 private
 
 def selected_activity_params
