@@ -1,4 +1,3 @@
-<div class="main-container">
   <%= render 'shared/navbar' %>
   <div class="container-map">
     <div class="roadsheet">
@@ -17,7 +16,7 @@
           <div id="day_two">Jour 2</div>
           <div id="day_three">Jour 3</div>
           <% end %>
-          <!--<div class="btn-valid-trip" id="valider-trip" data-url="<%= trip_url(@trip.id) %>">Valider trip</div>
+          <div class="btn-valid-trip" id="valider-trip" data-url="<%= trip_url(@trip.id) %>">Valider trip</div>
         </div>
 
         <div id="map"
@@ -37,11 +36,10 @@
           <div class="btn-quit">x</div>
           <div class="infos"></div>
         </div>
-      </div>-->
+      </div>
     </div>
 
     <%= yield :page_scripts %>
     <% content_for :head do %>
     <%= javascript_pack_tag "mapbox", 'data-turbolinks-track': 'reload', defer: true  %>
     <% end %>
-  </div>
