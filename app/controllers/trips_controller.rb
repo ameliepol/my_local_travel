@@ -17,8 +17,8 @@ class TripsController < ApplicationController
 
   def show
     @trip = Trip.find(params[:id])
-
-    @markers = Activity.first(3).map do |activity|
+    @activities = @trip.days.order(:position).map(&:selected_activities).flatten.map(&:activity)
+    @markers = @activities.map do |activity|
       if activity.category == "Hébergement"
         truc = "picto_hebergement.png"
       elsif activity.category == "Restauration"
@@ -37,7 +37,7 @@ class TripsController < ApplicationController
       }
     end
 
-    @coords = Activity.first(3).map do |activity|
+    @coords = @activities.map do |activity|
       "#{activity[:longitude]},#{activity[:latitude]}"
     end
   end
