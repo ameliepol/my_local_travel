@@ -1,4 +1,3 @@
-<div class="main-container">
 <%= render 'shared/navbar' %>
 <div class="container-map">
   <div class="roadsheet">
@@ -11,10 +10,8 @@
           <% day.selected_activities.where(pending: false).each do |selected_activity| %>
             <div class='activity-list'>
               <%= selected_activity.activity.name %>
-
             </div>
           <% end %>
-
         </div>
         <% end %>
       </div>
@@ -43,6 +40,3 @@
   </div>
 </div>
 </div>
-
-
-
