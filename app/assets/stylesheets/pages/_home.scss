@@ -3,6 +3,7 @@
   position: relative;
   height: 100%;
   margin: 16px;
+  margin-top:-8px;
   background: transparent;
 }
 
@@ -37,8 +38,8 @@
   object-fit: cover;
   flex-grow: 3;
   overflow: hidden;
-  background-size: 100% 150%;
-  background-image: url("https://res.cloudinary.com/dwekobmrk/image/upload/v1598554195/My%20local%20travel/Aventurier/kimson-doan-AZMmUy2qL6A-unsplash_k2v8yy_rtzy30_ps33um.jpg")
+  background-size: 100% 100%;
+  background-image: url("https://res.cloudinary.com/dwekobmrk/image/upload/v1599225325/My%20local%20travel/kimson-doan-AZMmUy2qL6A-unsplash_k2v8yy_1222222_cxk9pj.jpg")
 }
 .blue {
   object-fit: cover;
@@ -49,7 +50,7 @@
 .yellow {
   object-fit: cover;
   flex-grow: 3;
-  background-size: 100% 100%;
+  background-size: 100% 121%;
   background-image: url("https://res.cloudinary.com/dwekobmrk/image/upload/v1598558093/My%20local%20travel/Aventurier/esther-tuttle-dyjH3YMblpo-unsplash_ia3p3d_mz1csl.jpg")
 }
 .color {
