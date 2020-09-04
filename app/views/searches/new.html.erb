@@ -1,5 +1,11 @@
+<div class="background-image" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(https://res.cloudinary.com/dwekobmrk/image/upload/v1599208035/luke-shaffer-IdvCZnN9vfQ-unsplash_x7gzcc.jpg
+)">
+
+
 <%= render 'shared/navbar' %>
+
   <div class="search-container">
+
       <div class="row form-post">
         <%= simple_form_for @search, url: trips_path, method: :post,
         wrapper_mappings: {
@@ -76,18 +82,11 @@
       <% end %>
     </div>
   </div>
-
+</div>
 
 <!-- <%# content_for :head do %>
   <%#= javascript_pack_tag "autocomplete", 'data-turbolinks-track': 'reload', defer: true  %>
   <%# end %> -->
-
-
-
-
-
-
-
 
 
 
